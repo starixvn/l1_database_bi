@@ -1,0 +1,2227 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="efa592e4-95a3-436e-89f1-fd1c7df02f70" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DWPBI</ID>
+  <Name>DWPBI</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="40" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-19733" scrolltop="550" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="27040" y="21087" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Date" left="-18041" top="14102" logicalid="20" controlid="1" masterid="0" hint1="0" hint2="0" width="4577" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000e111000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimDate" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Game" left="-4971" top="24308" logicalid="21" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="2408" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000068090000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimGame" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Bet" left="-10564" top="12470" logicalid="22" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactBet" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Player" left="-5164" top="3225" logicalid="23" controlid="4" masterid="0" hint1="0" hint2="0" width="3387" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00003b0d000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimPlayer1" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Product" left="-7045" top="12377" logicalid="24" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimProduct" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="System" left="-5545" top="15376" logicalid="25" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimSystem" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="-5544" top="14379" logicalid="26" controlid="7" masterid="0" hint1="0" hint2="0" width="1249" height="1497" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_DimProduct_SystemId]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="5" sourceattachpoint="0" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="-5145" y="15376" />
+              <point x="-5145" y="14976" />
+              <point x="-4595" y="14976" />
+              <point x="-4595" y="15376" />
+              <point x="-4995" y="15376" />
+              <point x="-4995" y="14679" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="-4844" top="14180" logicalid="27" controlid="8" masterid="0" hint1="0" hint2="0" width="1123" height="10428" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_DimGame_ProductId]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="2" sourceattachpoint="9" destattachpoint="2" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="-4445" y="14679" />
+              <point x="-4445" y="19493" />
+              <point x="-4021" y="19493" />
+              <point x="-4021" y="24308" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="-4994" top="7925" logicalid="28" controlid="9" masterid="0" hint1="0" hint2="0" width="1273" height="7951" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_DimPlayer_SystemId]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="4" sourceattachpoint="2" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="-4595" y="15376" />
+              <point x="-4595" y="11801" />
+              <point x="-4021" y="11801" />
+              <point x="-4021" y="8225" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="-13764" top="7625" logicalid="29" controlid="10" masterid="0" hint1="0" hint2="0" width="8900" height="7177" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_DimPlayer_DateKey]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="4" sourceattachpoint="15" destattachpoint="26" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="-13464" y="14402" />
+              <point x="-9314" y="14402" />
+              <point x="-9314" y="7925" />
+              <point x="-5164" y="7925" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="-8264" top="7726" logicalid="30" controlid="11" masterid="0" hint1="0" hint2="0" width="4093" height="5044" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactBet_DimPlayer]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="3" sourceattachpoint="1" destattachpoint="8" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="-4571" y="8225" />
+              <point x="-4571" y="10347" />
+              <point x="-7964" y="10347" />
+              <point x="-7964" y="12470" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="-8264" top="17170" logicalid="31" controlid="12" masterid="0" hint1="0" hint2="0" width="4093" height="7638" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactBet_DimGame]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="3" sourceattachpoint="0" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="-4571" y="24308" />
+              <point x="-4571" y="20889" />
+              <point x="-7964" y="20889" />
+              <point x="-7964" y="17470" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="-7864" top="12574" logicalid="32" controlid="13" masterid="0" hint1="0" hint2="0" width="1119" height="1046" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactBet_ProductId]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="3" sourceattachpoint="10" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="-7045" y="12978" />
+              <point x="-7445" y="12978" />
+              <point x="-7445" y="12874" />
+              <point x="-7164" y="12874" />
+              <point x="-7164" y="13320" />
+              <point x="-7564" y="13320" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="-13764" top="14120" logicalid="33" controlid="14" masterid="0" hint1="0" hint2="0" width="3500" height="1782" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactBet_DateKey]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="19" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="-13464" y="15502" />
+              <point x="-12014" y="15502" />
+              <point x="-12014" y="14420" />
+              <point x="-10564" y="14420" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="-7864" top="15220" logicalid="34" controlid="15" masterid="0" hint1="0" hint2="0" width="2619" height="945" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactBet_SystemId]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="3" sourceattachpoint="10" destattachpoint="21" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="-5545" y="15765" />
+              <point x="-6554" y="15765" />
+              <point x="-6554" y="15520" />
+              <point x="-7564" y="15520" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="MetricSelector" left="-1045" top="13498" logicalid="35" controlid="16" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_MetricSelector" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Time" left="-3233" top="9465" logicalid="36" controlid="17" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimDateTime" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="-13764" top="11289" logicalid="37" controlid="18" masterid="0" hint1="0" hint2="0" width="10831" height="5163" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_DimDateTime_DateKey]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="17" sourceattachpoint="21" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="-13464" y="16052" />
+              <point x="-8349" y="16052" />
+              <point x="-8349" y="11589" />
+              <point x="-3233" y="11589" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="-7864" top="11740" logicalid="38" controlid="19" masterid="0" hint1="0" hint2="0" width="4931" height="1330" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactBet_DateTimeKey]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="17" destid="3" sourceattachpoint="18" destattachpoint="11" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="-3233" y="12139" />
+              <point x="-5398" y="12139" />
+              <point x="-5398" y="12770" />
+              <point x="-7564" y="12770" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-19733</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>550</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-18041</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>3225</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="a28c6247-1558-47ab-b80a-bc7b5b830843">
+      <ID>Date</ID>
+      <Name>Date</Name>
+      <DimensionID>Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e29e905c-bc43-4791-8d5f-eb91427368c7">
+          <AttributeID>Datekey</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="90b60460-0f83-43d9-9aec-522a4e355d1d">
+          <AttributeID>Calendar Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fbff93c0-d715-4dd6-b7bd-72b8fcbdd05b">
+          <AttributeID>Calendar Half Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5aaf3397-3772-4fc1-a7df-803803e63852">
+          <AttributeID>Calendar Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0a44e676-d17f-4896-b16e-e9891e6f085d">
+          <AttributeID>Calendar Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a5987180-c04a-4461-a571-bf93b3ec3d2b">
+          <AttributeID>Datekey 1</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="eebd0074-769a-4522-a4e5-b71d11f70a9e">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="af319de2-0677-4dc8-8ea9-ef9bcfb7d030">
+      <ID>Player</ID>
+      <Name>Player</Name>
+      <DimensionID>Player</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="45c91715-40a9-4000-b4ab-5f8acb04732a">
+          <AttributeID>Player ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d4601eff-7aff-4267-bbca-a831e08a4b57">
+          <AttributeID>Currency</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="667009af-b99c-4ee0-ae7a-719f496da2d3">
+          <AttributeID>Currency Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7e472275-2537-4db7-b0ca-f1360928102e">
+          <AttributeID>Currency Group Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="01222dc8-0fae-455e-8a5b-88f6a72324d6">
+          <AttributeID>Join Time</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e85c65e2-17db-4265-9c3f-95f6e102565a">
+          <AttributeID>Nick Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="87ea0635-64e6-44aa-afc0-404cd80e1c0b">
+          <AttributeID>Operator Player Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2b16b168-a405-41c6-9558-4399842e98ad">
+          <AttributeID>Reg Time</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4609880f-25bb-4e1f-a855-b7ce2930e23f">
+          <AttributeID>Site Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6a8510c3-e638-4514-9281-daa5bd14a717">
+          <AttributeID>Operator Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="eadc70a4-219d-476f-958a-adbb13f2a574">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="adbde019-0588-4e90-9121-f6c3d16c0ca0">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="402c9276-b5fa-4372-bfc4-5a4107074a55">
+      <ID>Game</ID>
+      <Name>Game</Name>
+      <DimensionID>Game</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ea2ab93a-b7e1-4c00-8f87-095e176de10f">
+          <AttributeID>Game Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4a4c987e-cc6b-4e4d-8341-e24370f2201b">
+          <AttributeID>Product Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b9e2c4e5-185d-423b-94dd-204e4277d5be">
+          <AttributeID>Sub Game Category</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="73458e37-ae79-493f-a82d-5c02cff79c67">
+          <AttributeID>Game Category</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e7ce56ad-3ce7-4c7e-b78e-b8d89cb5b946">
+          <AttributeID>Game Category 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="efa96275-9789-4d98-a813-2833f3d5e736">
+          <AttributeID>Sub Game Category 1</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="770eaf50-f6cc-4337-9f03-2cbc19e2aa64">
+          <AttributeID>Game Id 1</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="bc895dbf-3973-4444-917a-09ae92d3bf87">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="d9b38d0b-4407-4682-8927-4ab776917a64">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="a66bdcbb-81d3-4c13-b9be-21eaf3049e9c">
+      <ID>Product</ID>
+      <Name>Product</Name>
+      <DimensionID>Product</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="55522867-61cb-4cee-96c0-c245b74870c6">
+          <AttributeID>Product Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="daa3d6d6-8d20-4073-a36d-c7ff79aac6f1">
+          <AttributeID>System Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3e780762-de54-49d2-89eb-1198d3679d95">
+          <AttributeID>Product Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="c7a5e2ac-90da-45aa-b473-5974362559f9">
+      <ID>System</ID>
+      <Name>System</Name>
+      <DimensionID>System</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b8a7d4d6-bd7e-442e-95b4-693407a7588c">
+          <AttributeID>System Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="289c46db-b6fe-44d5-87c9-872ced413c17">
+      <ID>MetricSelector</ID>
+      <Name>MetricSelector</Name>
+      <DimensionID>MetricSelector</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c347a65a-109b-4279-887e-75c88690a8d8">
+          <AttributeID>Metric Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="067f5e73-68be-4fc2-bf6f-afc6102814be">
+          <AttributeID>Metric Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="7f3d6db7-2536-44f7-89fc-5ff915b26fb2">
+      <ID>Time</ID>
+      <Name>Time</Name>
+      <DimensionID>Time</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b6dcc507-4632-4420-9249-7cec009b2218">
+          <AttributeID>Date Time Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4edd7204-73a1-4020-894d-9aeab65c471e">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="1a7ac500-04ed-44bf-b733-7df71fa938be">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <Perspectives>
+    <Perspective dwd:design-time-name="3cf9b3c5-52de-493e-8454-74b89e8354ca">
+      <ID>Perspective</ID>
+      <Name>Player Overview</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Dimensions>
+        <Dimension dwd:design-time-name="f7136863-9596-4150-b4e8-ab0350dd1139">
+          <CubeDimensionID>Player</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a8f42ef0-6cfa-4c30-9c30-79ab967125f8">
+              <AttributeID>Player ID</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="41bb8660-9dab-49d1-b21e-487f3d4d6dbf">
+              <AttributeID>Currency</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="04223414-f2be-4ef9-8d08-7dfb89fdd97b">
+              <AttributeID>Join Time</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="016693d9-ce79-4a14-a237-4cd3c3261a76">
+              <AttributeID>Reg Time</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="70fdcb35-802c-48ae-a7ca-257762a658e0">
+              <AttributeID>Site Name</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="97b517a2-9896-471e-970d-1dc064ab75fc">
+              <AttributeID>Operator Id</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="5f8ce56f-d390-44db-8c02-de4f7262e4b4">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="d867d4d7-202d-4c76-bac2-7c1ccf2f1af1">
+          <CubeDimensionID>Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e20b3e8a-d764-4ed1-a71d-228cb3a3a885">
+              <AttributeID>Datekey</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="46a0069a-be24-461e-8745-30e533020272">
+              <AttributeID>Calendar Year</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="62c8f2a4-fa1b-4575-8eb9-dbbe7e326815">
+              <AttributeID>Calendar Half Year</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="56f9572b-1ea4-4122-9e3c-e51bc32988f0">
+              <AttributeID>Calendar Quarter</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="f092644c-0997-4d61-95e9-075623e0abb1">
+              <AttributeID>Calendar Month</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="4714baa0-bcae-461a-9ba0-4fea00f460e5">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup dwd:design-time-name="444a99d9-4fe4-47ef-a0ed-71a089435922">
+          <MeasureGroupID>Fact Bet</MeasureGroupID>
+          <Measures>
+            <Measure dwd:design-time-name="47dd2bfc-4c5d-4e00-a898-0d8bf617a1fe">
+              <MeasureID>USD Stake</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="98199a5d-0da3-4c6a-bba1-9ab080175340">
+              <MeasureID>USD Win</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="fb0bcc84-78da-4f2c-bb5c-7a7e02e9702f">
+              <MeasureID>USD Loss</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="47b8818b-923a-416b-8e40-f47f6561d074">
+              <MeasureID>USD Winloss</MeasureID>
+            </Measure>
+          </Measures>
+        </MeasureGroup>
+      </MeasureGroups>
+      <Calculations>
+        <Calculation dwd:design-time-name="8fc33cc1-9489-45c6-a256-24eb1aaf7400">
+          <Name>Top 5 Games By GGR</Name>
+          <Type>Set</Type>
+        </Calculation>
+      </Calculations>
+    </Perspective>
+    <Perspective dwd:design-time-name="b0a4d75d-5328-49e0-b273-999e28069c0d">
+      <ID>Perspective 1</ID>
+      <Name>Game Analytics</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Dimensions>
+        <Dimension dwd:design-time-name="98646af9-046b-4111-9483-778b415ee8e3">
+          <CubeDimensionID>Game</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d0225c13-9c23-4e14-930c-f92bd83096f0">
+              <AttributeID>Game Id</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="7ac5ac71-cb76-49a8-aee4-c8d2e9131e13">
+              <AttributeID>Product Id</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="78293c70-d6dd-4eed-b25a-9a55d3a326b2">
+              <AttributeID>Sub Game Category</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="3ed037b0-fcb9-433d-bf72-ba6d62fe13e7">
+              <AttributeID>Game Category</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="23bd2bfe-191e-4169-9dc4-49af0e2c8b32">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup dwd:design-time-name="f288fa3a-646c-4812-9e28-7585d04aeb2e">
+          <MeasureGroupID>Fact Bet</MeasureGroupID>
+          <Measures>
+            <Measure dwd:design-time-name="ebe84f23-3dc0-4771-b1d3-a4f86994908e">
+              <MeasureID>USD Stake</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="cc6b6867-6c00-4c12-9d55-2370694301a7">
+              <MeasureID>USD Winloss</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="23434467-6271-40a8-a0fe-6ad117bb3931">
+              <MeasureID>USD Win</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="9ad72c59-1565-47ff-bfb2-0525ad34e924">
+              <MeasureID>USD Loss</MeasureID>
+            </Measure>
+          </Measures>
+        </MeasureGroup>
+      </MeasureGroups>
+      <Calculations>
+        <Calculation dwd:design-time-name="9adda122-b118-4824-a5d9-ae3cdb1d6949">
+          <Name>[Measures].[House Edge]</Name>
+          <Type>Member</Type>
+        </Calculation>
+        <Calculation dwd:design-time-name="e93c0e86-0fa4-4242-94e0-99a34320e96b">
+          <Name>[Measures].[RTP]</Name>
+          <Type>Member</Type>
+        </Calculation>
+      </Calculations>
+    </Perspective>
+    <Perspective dwd:design-time-name="8cc29bc2-08f7-47f7-8d2e-6da66641be1d">
+      <ID>Perspective 2</ID>
+      <Name>Betting Analytics</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Dimensions>
+        <Dimension dwd:design-time-name="33734ab0-1a01-4613-95df-df3490082d76">
+          <CubeDimensionID>Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="cdb5a73f-a8f2-4ac2-b4c3-0c3fc7b79e36">
+              <AttributeID>Datekey</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="43840d9f-624f-45cd-abf6-c89e708673ce">
+              <AttributeID>Calendar Year</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="36a20988-b4e9-4b54-8110-fb6473a501b2">
+              <AttributeID>Calendar Half Year</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="eb9bf678-8e97-4c45-8b34-7bf8ec5c7edd">
+              <AttributeID>Calendar Quarter</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="31bb7de8-47f6-4e56-a956-838fdc7560c0">
+              <AttributeID>Calendar Month</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="db1ae294-1061-4d8a-8e5d-853de4c329c7">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="50e21141-bb6a-4fcc-b6f8-a83223b6dd82">
+          <CubeDimensionID>Game</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3e52b1c6-ef0b-4308-8c71-167da74fe72f">
+              <AttributeID>Game Id</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="d196c479-d331-4d04-986e-a36fa72d1d21">
+              <AttributeID>Product Id</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="80077a73-2af6-473c-9062-292c0c01b1f7">
+              <AttributeID>Sub Game Category</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="9dd192a4-a4eb-4978-bff1-6ee39c4a6e89">
+              <AttributeID>Game Category</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="67d45f78-96f3-458a-acdb-de71da3deaa5">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="6bd81827-1372-44f2-b57e-4380b8497094">
+          <CubeDimensionID>Player</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="31807799-465e-4d48-99c7-8cb2503bc79c">
+              <AttributeID>Player ID</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="1131d061-9fcb-4545-8ae8-f071c3eb0343">
+              <AttributeID>Currency</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup dwd:design-time-name="d1485e01-8cca-4d9c-afe7-87b1cdaf2f18">
+          <MeasureGroupID>Fact Bet</MeasureGroupID>
+          <Measures>
+            <Measure dwd:design-time-name="d5357f4a-f379-493d-b2bd-3a0d2e60512f">
+              <MeasureID>Stake</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="c0b7702d-e094-46b7-8c2b-e839a8555c95">
+              <MeasureID>Payout</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="53e3fe15-cf24-4a5b-8e20-70b443f8e4f7">
+              <MeasureID>Refund</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="aae4b6d1-1b17-4c7e-b4c3-bdc48e0975f1">
+              <MeasureID>Winloss</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="31147ad8-56c8-490d-82cb-83fd84644ccf">
+              <MeasureID>Win</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="79cffe70-34dc-4998-9566-655f782d82df">
+              <MeasureID>Loss</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="ddaa8d2e-2dad-4738-a702-d35fec830f58">
+              <MeasureID>Is Test</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="0bc58ac2-305a-449e-8f20-028097f3ee6f">
+              <MeasureID>Round Id</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="85d08184-84fb-4e1d-8147-12257b34f26e">
+              <MeasureID>Sub Round Id</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="3c30bb68-7390-47f2-83b2-042cb03ed56b">
+              <MeasureID>Tickets</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="fc39fc7e-1ab0-48ae-bf73-14431c209574">
+              <MeasureID>USD Stake</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="6f9fe6e3-0715-419e-b0bf-96444bef2e66">
+              <MeasureID>USD Payout</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="94f59325-adf0-4e73-ac07-2e28e9cb0ce0">
+              <MeasureID>USD Refund</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="352dfcd8-cf65-47e5-bf78-e3cb5242b625">
+              <MeasureID>USD Winloss</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="2f0fa2f3-3813-48c0-9916-76e01fbe34b1">
+              <MeasureID>USD Win</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="0536e515-afb1-4082-87e2-912209c3c161">
+              <MeasureID>USD Loss</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="53545209-53e7-4f8c-a27b-7fd229db9630">
+              <MeasureID>VND Stake</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="c2c3cc2b-6f75-4bdf-98c3-39c877108bc8">
+              <MeasureID>VND Payout</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="d891e276-29b2-4ff1-9b2a-acfd447b06dd">
+              <MeasureID>VND Refund</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="a5d03cb7-9874-4948-8efb-bf4d56a536c8">
+              <MeasureID>VND Winloss</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="fdc0ce95-cc9e-4d7f-85aa-8197e230264b">
+              <MeasureID>VND Win</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="7c1b9ce4-9494-447b-a990-d9b2f8cb5d83">
+              <MeasureID>VND Loss</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="b8bc7176-1860-49be-8dca-e83d6c23e0e9">
+              <MeasureID>Fact Bet Count</MeasureID>
+            </Measure>
+          </Measures>
+        </MeasureGroup>
+      </MeasureGroups>
+    </Perspective>
+    <Perspective dwd:design-time-name="e5082d54-1574-439a-b9e8-dc674a82fd36">
+      <ID>Perspective 3</ID>
+      <Name>Finance</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Dimensions>
+        <Dimension dwd:design-time-name="b0c7a493-fe49-4fca-a0ff-9767c5031f18">
+          <CubeDimensionID>Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0da11f45-c85a-44d2-88bd-1cc0bf246e6a">
+              <AttributeID>Datekey</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="c84a8e0d-b894-49da-812e-e3cd9e7d2bf6">
+              <AttributeID>Calendar Year</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="b511dddc-ebcd-444a-88dd-d18a51e1707a">
+              <AttributeID>Calendar Half Year</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="e43257e2-1692-4de2-bded-2f31ec9a1282">
+              <AttributeID>Calendar Quarter</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="0c2e9602-cef9-43b2-b263-adf576adc68d">
+              <AttributeID>Calendar Month</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="73c6289a-a800-4988-a09a-2de3b72dbfa5">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup dwd:design-time-name="28e20b4a-e4db-42ab-afff-b667fdf22780">
+          <MeasureGroupID>Fact Bet</MeasureGroupID>
+          <Measures>
+            <Measure dwd:design-time-name="353a9ab1-a9c5-4222-a4ea-63cec1d19627">
+              <MeasureID>Stake</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="d916b326-ee64-4180-b700-c46dc81e9071">
+              <MeasureID>Payout</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="7057b9fc-19c4-4600-a1da-6d4fbdc59395">
+              <MeasureID>Refund</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="98e0d5b4-434f-40c0-8032-607e79e5705f">
+              <MeasureID>Winloss</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="df5e7fcd-0f5c-4688-badc-21cd8c3f9557">
+              <MeasureID>Win</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="c036792b-394f-4d25-9857-eb9c7bb071cb">
+              <MeasureID>Loss</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="cdbbca15-a184-4879-8b9b-4526c3c9d260">
+              <MeasureID>Is Test</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="b96c8024-6b40-4fa4-93af-077b6f33730f">
+              <MeasureID>Round Id</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="881658f2-50b1-4785-9e76-bd7bff139040">
+              <MeasureID>Sub Round Id</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="2988cc45-9e6a-401a-b3d3-644db9962f94">
+              <MeasureID>Tickets</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="3c7f5e51-4066-4466-82d9-919c331845b6">
+              <MeasureID>USD Stake</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="fbe6aa7f-f85a-4073-bf96-01f1ebb0ca1d">
+              <MeasureID>USD Payout</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="656df8b6-0d3e-45af-ac04-7698c89fef06">
+              <MeasureID>USD Refund</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="595e8ec6-0422-4082-b6b8-361bcfa823dd">
+              <MeasureID>USD Winloss</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="8c8e5837-3991-4612-9487-e8eb32c072ed">
+              <MeasureID>USD Win</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="89620efe-1d7b-4de0-9832-85c4d8bed791">
+              <MeasureID>USD Loss</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="76c084f7-c4b2-4dfe-aecd-126757d5dbb8">
+              <MeasureID>VND Stake</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="9884fca7-3100-4ed9-a3b4-23d818c6381a">
+              <MeasureID>VND Payout</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="6e6a4bf4-d492-4951-b88e-5d380a18ae2a">
+              <MeasureID>VND Refund</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="95d8e903-1cdf-4e07-b24d-a23bb27d0377">
+              <MeasureID>VND Winloss</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="d17faa12-a4be-4679-b89e-f2ca6e0745dd">
+              <MeasureID>VND Win</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="8f69e83a-b096-4677-ba19-d2ebf0e1bacd">
+              <MeasureID>VND Loss</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="f5391758-538c-4eb1-99fc-db5aa00deba9">
+              <MeasureID>Fact Bet Count</MeasureID>
+            </Measure>
+          </Measures>
+        </MeasureGroup>
+      </MeasureGroups>
+      <Calculations>
+        <Calculation dwd:design-time-name="5cbcd8fe-f62b-49e8-b8b7-e345ce191410">
+          <Name>[Measures].[GGR]</Name>
+          <Type>Member</Type>
+        </Calculation>
+      </Calculations>
+    </Perspective>
+    <Perspective dwd:design-time-name="f16b1685-fc19-4f10-adde-ca20c03c8759">
+      <ID>Perspective 4</ID>
+      <Name>Operator - Site Performance</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Dimensions>
+        <Dimension dwd:design-time-name="1de6d841-274d-4977-a8a8-e40974ea820d">
+          <CubeDimensionID>Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="782ef65d-8a69-445b-9431-04e3c18d52d9">
+              <AttributeID>Datekey</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="f0a70819-0778-4e74-a5cd-85dac99871e2">
+              <AttributeID>Calendar Year</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="81760145-7c8e-46e5-ad25-46b9829a7f08">
+              <AttributeID>Calendar Half Year</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="baf7e467-f7bd-444a-8129-3b172ab97563">
+              <AttributeID>Calendar Quarter</AttributeID>
+            </Attribute>
+            <Attribute dwd:design-time-name="eebc756f-0a39-4463-8139-f7bc67eeeef5">
+              <AttributeID>Calendar Month</AttributeID>
+            </Attribute>
+          </Attributes>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="1007f26d-a1be-4b2b-99d8-463295492de6">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+        <Dimension dwd:design-time-name="b2319aa3-6813-43e3-abd7-bf2f182f600e">
+          <CubeDimensionID>Player</CubeDimensionID>
+          <Hierarchies>
+            <Hierarchy dwd:design-time-name="a82f5565-a740-4a19-9262-adb11aabea4a">
+              <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+          </Hierarchies>
+        </Dimension>
+      </Dimensions>
+      <MeasureGroups>
+        <MeasureGroup dwd:design-time-name="3c48ce93-b051-41e4-9a08-d7f805153b87">
+          <MeasureGroupID>Fact Bet</MeasureGroupID>
+          <Measures>
+            <Measure dwd:design-time-name="5b2c8771-152f-4111-89ee-05c4928d3fee">
+              <MeasureID>USD Payout</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="24538307-fd52-4b9a-ab9d-d839459ffc9e">
+              <MeasureID>USD Stake</MeasureID>
+            </Measure>
+            <Measure dwd:design-time-name="7c239294-1d4a-4172-8957-895e8098399b">
+              <MeasureID>USD Winloss</MeasureID>
+            </Measure>
+          </Measures>
+        </MeasureGroup>
+      </MeasureGroups>
+    </Perspective>
+  </Perspectives>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="799e292b-9474-4aac-81c5-431733293085">
+      <ID>Fact Bet</ID>
+      <Name>Fact Bet</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="807762e1-2c40-4a46-9a5f-7f7522635eb0">
+          <ID>Stake</ID>
+          <Name>Stake</Name>
+          <Source dwd:design-time-name="a1f05226-d8fb-4264-836b-c9cae86a0130">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a5e774ce-a638-4f59-bf4a-3abe70e57a72">
+              <TableID>dbo_FactBet</TableID>
+              <ColumnID>stake</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,##0.00 $</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="3226db28-abe0-4bfe-905b-ec81fb5ad768">
+          <ID>Payout</ID>
+          <Name>Payout</Name>
+          <Source dwd:design-time-name="2bf75288-29b7-4660-8e76-9ef2021ccca6">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="61947e73-173e-415e-b49c-b64d0fc20e6b">
+              <TableID>dbo_FactBet</TableID>
+              <ColumnID>payout</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>Currency</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="46aec709-f110-4f55-99d1-b9bdcd4dcd8d">
+          <ID>Refund</ID>
+          <Name>Refund</Name>
+          <Source dwd:design-time-name="78fd53bc-8df9-4455-a48b-ab0ec2adf14d">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6726200e-bd76-4999-8b03-b7117818c4df">
+              <TableID>dbo_FactBet</TableID>
+              <ColumnID>refund</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>Currency</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="6bd24887-9b46-49f2-9b46-9b65c8e8b2d0">
+          <ID>Winloss</ID>
+          <Name>Winloss</Name>
+          <Source dwd:design-time-name="c2fcf203-3542-4f88-bcc1-5538931ef9f2">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3c90aa4b-40ef-4757-9609-a992810d2ca0">
+              <TableID>dbo_FactBet</TableID>
+              <ColumnID>winloss</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>Currency</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="cf8542d3-1569-4f76-aee5-8836154d5359">
+          <ID>Win</ID>
+          <Name>Win</Name>
+          <Source dwd:design-time-name="461ffde5-169d-46da-99d4-852566b20ef3">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="838358d4-f1d8-4364-95af-1d05867bc29a">
+              <TableID>dbo_FactBet</TableID>
+              <ColumnID>win</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>Currency</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="ed44532e-6c4f-4fdb-8d43-10bf710d0f9e">
+          <ID>Loss</ID>
+          <Name>Loss</Name>
+          <Source dwd:design-time-name="79d52ac0-f9df-443f-a828-03d3d9185467">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d4c7c94c-01cd-4716-8b8b-216ad325d534">
+              <TableID>dbo_FactBet</TableID>
+              <ColumnID>loss</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>Currency</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="2b2947f1-3cec-4dea-9c16-b725a8f0e614">
+          <ID>Is Test</ID>
+          <Name>Is Test</Name>
+          <Source dwd:design-time-name="bbd686dd-09be-4b48-8db4-76da3c416f2f">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a843d8bc-a638-4013-afb0-cecf61260d2a">
+              <TableID>dbo_FactBet</TableID>
+              <ColumnID>isTest</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b140232c-0867-4395-a467-974a9a07d0bf">
+          <ID>Round Id</ID>
+          <Name>Round Id</Name>
+          <Source dwd:design-time-name="8ecc26ad-dac4-4aac-99b6-bb50ae12e767">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9a18c59a-6bc1-4017-a055-52a829253306">
+              <TableID>dbo_FactBet</TableID>
+              <ColumnID>roundId</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="6ced50cf-9466-4da9-8a54-b4ed29e825f9">
+          <ID>Sub Round Id</ID>
+          <Name>Sub Round Id</Name>
+          <Source dwd:design-time-name="e7dd3475-7ee0-48b2-be21-fd6558356752">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4381074e-ab8b-4e66-b6c7-9e4607e0bc42">
+              <TableID>dbo_FactBet</TableID>
+              <ColumnID>subRoundId</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5e8d8006-8a75-40b0-aebd-3155ae05b552">
+          <ID>Tickets</ID>
+          <Name>Tickets</Name>
+          <Source dwd:design-time-name="71e22373-ccd1-43cc-9d5d-c8681861c11c">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9136d1de-c33c-468f-afe9-e42fc6a1a4c4">
+              <TableID>dbo_FactBet</TableID>
+              <ColumnID>tickets</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="674bf95b-5aca-459b-a622-8c5d2bfc429a">
+          <ID>USD Stake</ID>
+          <Name>USD Stake</Name>
+          <Source dwd:design-time-name="310f5962-20b5-46ff-bc90-0d06c7d036f6">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="72fec18a-65e8-4f50-9280-b8ffd6216115">
+              <TableID>dbo_FactBet</TableID>
+              <ColumnID>USD_stake</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>Currency</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="9cb1076b-e1d3-48f6-9427-c403d51fb71d">
+          <ID>USD Payout</ID>
+          <Name>USD Payout</Name>
+          <Source dwd:design-time-name="fbef8170-eb00-448a-a177-70681721c1db">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8f5c1b56-0737-4c05-abdc-ab0f3aecad93">
+              <TableID>dbo_FactBet</TableID>
+              <ColumnID>USD_payout</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>Currency</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="07e6dd26-192c-443e-854b-ce41fdceb1b1">
+          <ID>USD Refund</ID>
+          <Name>USD Refund</Name>
+          <Source dwd:design-time-name="1ba331dc-e53a-4d62-9a29-2d14a26c9e5d">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="31beadc9-d238-49a8-8fc9-6d7866a6e00d">
+              <TableID>dbo_FactBet</TableID>
+              <ColumnID>USD_refund</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>Currency</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="09b7d15a-2b12-40dd-b854-806edd4b5b11">
+          <ID>USD Winloss</ID>
+          <Name>USD Winloss</Name>
+          <Source dwd:design-time-name="c7f45eb8-4ce5-45c0-a448-6148094df452">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d385db87-b9ab-4565-af6a-cc7295c76eec">
+              <TableID>dbo_FactBet</TableID>
+              <ColumnID>USD_winloss</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>Currency</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="d33d1046-4b87-4813-b501-81743f60fa53">
+          <ID>USD Win</ID>
+          <Name>USD Win</Name>
+          <Source dwd:design-time-name="efa69f4f-7d04-4b95-a7ee-24da48687bbc">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bccc3f79-09ce-433b-9cab-25afa9f01f26">
+              <TableID>dbo_FactBet</TableID>
+              <ColumnID>USD_win</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>Currency</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="5f504f55-2f7c-4a53-be63-e02f28e79048">
+          <ID>USD Loss</ID>
+          <Name>USD Loss</Name>
+          <Source dwd:design-time-name="02073134-e6e7-4a38-aeba-ce5afac8cd53">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8be5fa8a-a2bf-4bd2-a491-89c74a01d9b8">
+              <TableID>dbo_FactBet</TableID>
+              <ColumnID>USD_loss</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>Currency</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="6645dcbb-3ae7-4236-8912-771018086e80">
+          <ID>VND Stake</ID>
+          <Name>VND Stake</Name>
+          <Source dwd:design-time-name="01414052-bba5-46c2-9498-fe7e3d1db71a">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="eed163f4-2560-412b-9c94-3631045f1663">
+              <TableID>dbo_FactBet</TableID>
+              <ColumnID>VND_stake</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>Currency</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="7ebe5878-9b19-4346-b1a4-a88872acc86d">
+          <ID>VND Payout</ID>
+          <Name>VND Payout</Name>
+          <Source dwd:design-time-name="6d2cca83-d6ec-4306-b8c2-f30ea2f76a3b">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="09312253-c06f-4f6b-b1d6-a4774f989cc1">
+              <TableID>dbo_FactBet</TableID>
+              <ColumnID>VND_payout</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>Currency</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="8c04ba85-0623-4a52-8d12-61900027a691">
+          <ID>VND Refund</ID>
+          <Name>VND Refund</Name>
+          <Source dwd:design-time-name="359ee32d-8be4-4de0-9827-1d0ef03a7266">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="383b081c-9b1d-4aa0-91b3-2884de9e63fa">
+              <TableID>dbo_FactBet</TableID>
+              <ColumnID>VND_refund</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>Currency</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="cc86b031-6386-40fc-a292-f666bf62f3ed">
+          <ID>VND Winloss</ID>
+          <Name>VND Winloss</Name>
+          <Source dwd:design-time-name="5dda0a4d-b81b-44e0-9db5-9e00b4af30c2">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1f89e79d-c8d2-4218-8f5c-ed8cce3f1514">
+              <TableID>dbo_FactBet</TableID>
+              <ColumnID>VND_winloss</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>Currency</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="a9b5988f-4571-4487-aa8b-447cdd46a1af">
+          <ID>VND Win</ID>
+          <Name>VND Win</Name>
+          <Source dwd:design-time-name="cf3f93da-2f0d-4aec-a1a1-360a73dafb18">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e30fdd89-5e88-42e6-9605-acaedd29c67a">
+              <TableID>dbo_FactBet</TableID>
+              <ColumnID>VND_win</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>Currency</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="ea37deeb-8b66-45bb-ad20-878c69bb8804">
+          <ID>VND Loss</ID>
+          <Name>VND Loss</Name>
+          <Source dwd:design-time-name="b87759a6-9f5d-4bb0-b173-e1b0ae5b0cc8">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="81f8f8a6-4db3-4a76-8b95-1e7fef231706">
+              <TableID>dbo_FactBet</TableID>
+              <ColumnID>VND_loss</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>Currency</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="ce0907c8-1e85-4152-80e8-bebb6137d1e1">
+          <ID>Fact Bet Count</ID>
+          <Name>Ticket Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="973aa45a-b041-446e-b4da-a0a5a7503164">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="ad236dfb-7038-48d6-9e13-f272c90693d3">
+              <TableID>dbo_FactBet</TableID>
+            </Source>
+          </Source>
+          <FormatString>#,##0</FormatString>
+        </Measure>
+        <Measure dwd:design-time-name="ff426908-5e77-46ad-b2ef-a3a34fc5392e">
+          <ID>Is Valid Bet</ID>
+          <Name>RealTicket</Name>
+          <Source dwd:design-time-name="8b25f978-8338-489b-a77c-1f3f1595846b">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="30c17e90-c354-40e3-8705-a85392d66219">
+              <TableID>dbo_FactBet</TableID>
+              <ColumnID>IsRealBet</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedRows>61338838</EstimatedRows>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="72f1a13e-60f9-49f5-8b62-d48441b44e4e">
+          <CubeDimensionID>Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="232e9c8f-8378-4894-87fb-304ad45db8ee">
+              <AttributeID>Datekey</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="514de81b-d0b7-4cda-97f0-2ed032974b4f">
+                  <DataType>Date</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c8ce74e4-8ca3-4ea2-b422-f402c3b2ed38">
+                    <TableID>dbo_FactBet</TableID>
+                    <ColumnID>Datekey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c3fee481-90d6-4bab-9320-2e69161a0cc0">
+          <CubeDimensionID>Player</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b89af87d-40d7-46a2-8173-0bbfbc939169">
+              <AttributeID>Player ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="cc38c216-c707-4405-bb53-46cfd3704ef3">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="79a35ddd-557f-43a2-8e2e-f26f899c252a">
+                    <TableID>dbo_FactBet</TableID>
+                    <ColumnID>SystemId</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="fecbdf7f-f87c-4ce2-9c4e-a319de928d89">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6f4e81a9-a0e9-42dd-a263-ed779361aaeb">
+                    <TableID>dbo_FactBet</TableID>
+                    <ColumnID>OperatorId</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="a29f54d7-13fb-4893-b429-72be8ec4579e">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ec580288-aabc-4322-a8d3-4f228d3b5e90">
+                    <TableID>dbo_FactBet</TableID>
+                    <ColumnID>playerId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="cff5a7d6-9bf9-45c8-9af6-a55439853f4e">
+          <CubeDimensionID>Game</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9466b4b5-8643-4395-8590-effa0feaf260">
+              <AttributeID>Game Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="79759219-37c1-4ced-8373-b8fc5d9b486b">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9455eb1d-074c-42b1-b1f8-5551d0c9dc34">
+                    <TableID>dbo_FactBet</TableID>
+                    <ColumnID>gameId</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="ea6da719-d274-425f-9a50-5d5cd043c837">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="56ab5191-f8fd-4958-b0d2-3f6b021a7ac3">
+                    <TableID>dbo_FactBet</TableID>
+                    <ColumnID>ProductId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="42ebf185-a98c-4b2e-9863-21149de3d00c">
+          <CubeDimensionID>Product</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d3947e52-4850-4238-9a9d-c4b78a8211de">
+              <AttributeID>Product Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d520b0f9-e983-4fcc-8b12-e73821b91182">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="67fe66d5-d973-4582-8235-7b1dfe7c6919">
+                    <TableID>dbo_FactBet</TableID>
+                    <ColumnID>ProductId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="da89aa59-884d-4295-a552-6d131c92b5fc">
+          <CubeDimensionID>System</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c62bc500-29dd-4298-b8b4-9a90c8bdcf08">
+              <AttributeID>System Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b820a854-5c74-421e-8ec5-a3969938416b">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8afadf76-b0b6-47b1-a806-159ff0797c4e">
+                    <TableID>dbo_FactBet</TableID>
+                    <ColumnID>SystemId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a1980a0d-7a12-4674-aeb6-0174f5b071ee">
+          <CubeDimensionID>Time</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="93b40982-461b-4cd0-bab6-2c166308e674">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c4ca44bb-e488-4b35-b092-d002aa9e0427">
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a264f2fd-413d-4673-bc9e-1d9bdf218654">
+                    <TableID>dbo_FactBet</TableID>
+                    <ColumnID>Datekey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="15256f3f-ea40-452b-a5a7-765643f4c706">
+              <AttributeID>Date Time Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b59e47bf-c1a7-40a2-a251-b5c3d1677fd0">
+                  <DataType>Date</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ab3b237c-b559-457f-abbc-4e322cdb6095">
+                    <TableID>dbo_FactBet</TableID>
+                    <ColumnID>DateTimeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <AggregationDesigns />
+      <ddl500:ShardedMode valuens="ddl500_500">Sharded</ddl500:ShardedMode>
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="e868407d-4af9-465c-8abb-fb292828010b">
+      <ID>Fact Bet 1</ID>
+      <Name>Player</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="3ed49edc-d0e4-4f7b-87e2-23681269405b">
+          <ID>Player Id Distinct Count</ID>
+          <Name>Active Players</Name>
+          <AggregateFunction>DistinctCount</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="8015dc67-49fb-43a0-a4ec-58fe2d6dc9c3">
+            <DataType>WChar</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1707ada9-c3f1-45df-8de8-e5a136379b82">
+              <TableID>dbo_FactBet</TableID>
+              <ColumnID>playerId</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedRows>61338838</EstimatedRows>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="fb370c7e-60c6-4e0d-9704-942e35dfbe8c">
+          <CubeDimensionID>Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f1c42fe9-26b1-4fff-aa51-99fb2e785ecf">
+              <AttributeID>Datekey</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="14617083-b344-4c2a-9743-be346cd55466">
+                  <DataType>Date</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6111fe56-d54b-4c95-928f-ed1942e5358a">
+                    <TableID>dbo_FactBet</TableID>
+                    <ColumnID>Datekey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e084462b-91c7-4200-b0b6-fd9af9f539cb">
+          <CubeDimensionID>Player</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6f8e42ad-e416-4b8e-a325-074076beb228">
+              <AttributeID>Player ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="81fd7922-1675-4e82-b997-4091261e731a">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="048dc82a-e58a-4f6d-93a6-1b504af23029">
+                    <TableID>dbo_FactBet</TableID>
+                    <ColumnID>SystemId</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="c2c39538-ce3c-4b1a-be35-730f9a7d9506">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b1a865aa-deff-4ef9-94d8-194713385aaa">
+                    <TableID>dbo_FactBet</TableID>
+                    <ColumnID>OperatorId</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="56ca98e5-7131-4db1-8f80-22a6b4b9ac54">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b3dcc65a-06e1-41bd-9a47-b5b680173d16">
+                    <TableID>dbo_FactBet</TableID>
+                    <ColumnID>playerId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="91217df2-1428-47e7-916d-4d57dce61e98">
+          <CubeDimensionID>Game</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="aa7154bc-b2a6-45c5-9b04-9dbfe659023a">
+              <AttributeID>Game Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8d7df9ee-0b64-49da-84df-943dc5e8563f">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3b763a87-e5e6-430c-b986-e8b53eda6c9c">
+                    <TableID>dbo_FactBet</TableID>
+                    <ColumnID>gameId</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="a7b424f6-8839-4ad8-b8f3-722bbea40612">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c7165b26-dd6d-4021-940c-17cb99a556ab">
+                    <TableID>dbo_FactBet</TableID>
+                    <ColumnID>ProductId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="15a6bd9c-02b6-43fc-aa41-7ebabde27033">
+          <CubeDimensionID>System</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b69abf32-4a3f-4e2a-8a58-223b7b4404a2">
+              <AttributeID>System Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5c41c6e5-f694-4db9-8f4b-ce775e19dd4f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="19182ea0-96b1-4c37-8dd2-ac654f4dc454">
+                    <TableID>dbo_FactBet</TableID>
+                    <ColumnID>SystemId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f6b86923-a0a7-4658-8781-68adb8ac22a2">
+          <CubeDimensionID>Product</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0bf21102-3343-4080-a58a-108222402444">
+              <AttributeID>Product Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="25960c5e-547f-4a95-aece-63588f0b5315">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d92ec1ad-ebc6-48d1-b023-9b0ba560c837">
+                    <TableID>dbo_FactBet</TableID>
+                    <ColumnID>ProductId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <AggregationDesigns />
+      <ddl500:ShardedMode valuens="ddl500_500">Sharded</ddl500:ShardedMode>
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="21632c6a-4a4e-4883-aaee-76081b9e681f">
+      <ID>Player</ID>
+      <Name>PlayerInfo</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="6f1d2902-f8e3-4cd6-b776-57d5d93362f1">
+          <ID>Join Time Count</ID>
+          <Name>Register Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="5a49b91e-9a5b-4879-89c9-bb221b8d858b">
+            <DataType>WChar</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c414583c-5d08-41c6-b182-06557d966a35">
+              <TableID>dbo_DimPlayer1</TableID>
+              <ColumnID>joinTime</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="03004dec-ffb9-406b-a1c4-6ba377878803">
+          <CubeDimensionID>Player</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="abab88d3-66e3-461c-add6-ebbfa17e4d48">
+              <AttributeID>Player ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a6c6ff06-093c-4b4a-9840-09c855882ce2">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f4fbe8b3-4a6f-461c-8f0d-d0f77872cbe3">
+                    <TableID>dbo_DimPlayer1</TableID>
+                    <ColumnID>systemId</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="96b85ff4-fa67-4bb1-b871-e01aebc867d8">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6e27024f-33d3-4390-a314-cf89b1eea9bd">
+                    <TableID>dbo_DimPlayer1</TableID>
+                    <ColumnID>operatorId</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="1ce55c46-264c-4b36-9af3-e6859f55cec0">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f64d1e72-1be1-43e4-b769-0303426f6849">
+                    <TableID>dbo_DimPlayer1</TableID>
+                    <ColumnID>PlayerID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="26603e4c-2616-43f5-9152-da65fc7aabe2">
+          <CubeDimensionID>Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9b0c8f03-f99f-49da-96a1-6cb6f2789a58">
+              <AttributeID>Datekey</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4298c9be-71d3-4cec-a0f6-f3c5cbeee7a4">
+                  <DataType>Date</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a99fe025-8cfc-493b-b488-ef988029b738">
+                    <TableID>dbo_DimPlayer1</TableID>
+                    <ColumnID>DateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3fcb5bbc-80f1-4c5b-854f-522a12b52494">
+          <CubeDimensionID>System</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="92e4aa33-fa91-4930-b9cd-047de2457f4d">
+              <AttributeID>System Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2688c079-6108-4971-8c4c-77df213af1f9">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8e74e70d-bf95-4010-a456-25cfc975bb00">
+                    <TableID>dbo_DimPlayer1</TableID>
+                    <ColumnID>systemId</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="72fcda70-3845-46bd-9408-4b575ca36023">
+    <DataSourceViewID>DWPBI</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="df696675-8ae1-475b-bb9c-6d069834b75e">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>CALCULATE;               
+                      
+CREATE MEMBER CURRENTCUBE.[Measures].[USD Valid Stake]
+ AS [Measures].[USD Stake] - [Measures].[USD Refund], 
+FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Calculated Measures';                               
+CREATE MEMBER CURRENTCUBE.[Measures].[USD Valid Payout]
+ AS [Measures].[USD Payout] - [Measures].[USD Refund], 
+FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Calculated Measures';                                      
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Bets Real Sum]
+ AS [Measures].[RealTicket], 
+FORMAT_STRING = "#,##0;(#,##0)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';     
+
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Bets Real Sum Prev Month]
+ AS (ParallelPeriod(
+            [Date].[Month].[Month], 1,
+            [Date].[Month].CurrentMember
+        ),
+        [Measures].[Bets Real Sum]), 
+FORMAT_STRING = "#,##0.00;(#,##0.00)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';                
+                  
+CREATE MEMBER CURRENTCUBE.[Measures].[Bets Real Sum Var%] 
+AS
+    IIF(
+        IsEmpty([Measures].[Bets Real Sum Prev Month]) OR [Measures].[Bets Real Sum Prev Month] = 0,
+        NULL,
+        ([Measures].[Bets Real Sum] - [Measures].[Bets Real Sum Prev Month])
+        / [Measures].[Bets Real Sum Prev Month]
+    ),
+FORMAT_STRING = "Percent",
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';               
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Bets Real Sum Delta]
+ AS IIF(
+        IsEmpty([Measures].[Bets Real Sum Prev Month]) OR [Measures].[Bets Real Sum Prev Month] = 0,
+        NULL,
+        ([Measures].[Bets Real Sum] - [Measures].[Bets Real Sum Prev Month])
+    ), 
+FORMAT_STRING = "#,##0.00;(#,##0.00)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';    
+
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[MoM text]
+ AS "MoM%", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Text';               
+
+CREATE MEMBER CURRENTCUBE.[Measures].[MoM Change]
+ AS "MoM Change", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Text';                  
+
+
+// GGR
+CREATE MEMBER CURRENTCUBE.[Measures].[GGR]
+ AS [Measures].[USD Valid Stake] - [Measures].[USD Win], 
+FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';      
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[GGR Prev Month]
+ AS (ParallelPeriod(
+            [Date].[Month].[Month], 1,
+            [Date].[Month].CurrentMember
+        ),
+        [Measures].[GGR]), 
+FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';                  
+
+CREATE MEMBER CURRENTCUBE.[Measures].[GGR All Game Category]
+ AS  SUM(
+        {[Game].[Game Category Hierarchy].[Category].Members}, 
+        ([Measures].[GGR])
+    ), 
+FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';                    
+   
+CREATE MEMBER CURRENTCUBE.[Measures].[GGR All Game Category Pre Month]
+ AS (ParallelPeriod(
+            [Date].[Month].[Month], 1,
+            [Date].[Month].CurrentMember
+        ),
+        [Measures].[GGR All Game Category]),  
+FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';          
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[GGR All Game Category Delta] 
+ AS  SUM(
+        {[Game].[Game Category Hierarchy].[Category].Members}, 
+        ([Measures].[GGR Delta])
+    ), 
+FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';                  
+
+CREATE MEMBER CURRENTCUBE.[Measures].[GGR All Game Category Var%] 
+AS
+    IIF(
+        IsEmpty([Measures].[GGR All Game Category Pre Month]) OR [Measures].[GGR All Game Category Pre Month] = 0,
+        NULL,
+        ([Measures].[GGR All Game Category] - [Measures].[GGR All Game Category Pre Month])
+        / [Measures].[GGR All Game Category Pre Month]
+    ),
+FORMAT_STRING = "Percent",
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';      
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Selected Metric] AS 
+IIF(
+    [MetricSelector].[Metric Name].CURRENTMEMBER IS [MetricSelector].[Metric Name].&amp;[Turnover],
+    [Measures].[Turnover],
+    IIF(
+        [MetricSelector].[Metric Name].CURRENTMEMBER IS [MetricSelector].[Metric Name].&amp;[GGR],
+        [Measures].[GGR],
+        IIF(
+            [MetricSelector].[Metric Name].CURRENTMEMBER IS [MetricSelector].[Metric Name].&amp;[Win Sum],
+            [Measures].[Win Sum],
+            IIF(
+                [MetricSelector].[Metric Name].CURRENTMEMBER IS [MetricSelector].[Metric Name].&amp;[Bets Sum],
+                [Measures].[Bets Sum],
+                IIF(
+                    [MetricSelector].[Metric Name].CURRENTMEMBER IS [MetricSelector].[Metric Name].&amp;[Active Players],
+                    [Measures].[Active Players],
+                    IIF(
+                        [MetricSelector].[Metric Name].CURRENTMEMBER IS [MetricSelector].[Metric Name].&amp;[Active Players (Hourly)],
+                        [Measures].[Active Players (Hourly)],
+                        NULL
+                    )
+                )
+            )
+        )
+    )
+),
+VISIBLE = 1, 
+DISPLAY_FOLDER = 'Dynamic Metrics',
+FORMAT_STRING = "#,##0.00";  
+
+/*
+CREATE MEMBER CURRENTCUBE.[Measures].[Selected Metric] AS 
+IIF(
+    [MetricSelector].[Metric Name].CURRENTMEMBER IS [MetricSelector].[Metric Name].&amp;[Turnover],
+    [Measures].[Turnover],
+    IIF(
+        [MetricSelector].[Metric Name].CURRENTMEMBER IS [MetricSelector].[Metric Name].&amp;[GGR],
+        [Measures].[GGR],
+        IIF(
+            [MetricSelector].[Metric Name].CURRENTMEMBER IS [MetricSelector].[Metric Name].&amp;[Win Sum],
+            [Measures].[Win Sum],
+            IIF(
+                [MetricSelector].[Metric Name].CURRENTMEMBER IS [MetricSelector].[Metric Name].&amp;[Bets Sum],
+                [Measures].[Bets Sum],
+                IIF(
+                    [MetricSelector].[Metric Name].CURRENTMEMBER IS [MetricSelector].[Metric Name].&amp;[Active Players],
+                    [Measures].[Active Players],
+                    NULL
+                )
+            )
+        )
+    )
+),
+VISIBLE = 1, 
+DISPLAY_FOLDER = 'Dynamic Metrics',
+FORMAT_STRING = "#,##0.00";  
+*/
+
+CREATE MEMBER CURRENTCUBE.[Measures].[GGR Var%] 
+AS
+    IIF(
+        IsEmpty([Measures].[GGR Prev Month]) OR [Measures].[GGR Prev Month] = 0,
+        NULL,
+        ([Measures].[GGR] - [Measures].[GGR Prev Month])
+        / [Measures].[GGR Prev Month]
+    ),
+FORMAT_STRING = "Percent",
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';               
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[GGR Delta] 
+AS
+    IIF(
+        IsEmpty([Measures].[GGR Prev Month]) OR [Measures].[GGR Prev Month] = 0,
+        NULL,
+        ([Measures].[GGR] - [Measures].[GGR Prev Month])
+    ),
+FORMAT_STRING = "$#,##0.00;($#,##0.00)",
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';     
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[GGR Contri %]
+ AS IIF(
+        [Measures].[GGR All Game Category Delta] = 0,
+        NULL,
+        ([Measures].[GGR Delta] / [Measures].[GGR All Game Category Delta]) 
+    ), 
+FORMAT_STRING = "Percent", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';                  
+
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Win Sum]
+ AS [Measures].[USD Win], 
+FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';               
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Win Sum Prev Month]
+ AS (ParallelPeriod(
+            [Date].[Month].[Month], 1,
+            [Date].[Month].CurrentMember
+        ),
+        [Measures].[Win Sum]), 
+FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';            
+
+         
+CREATE MEMBER CURRENTCUBE.[Measures].[Win Sum Var%] 
+AS
+    IIF(
+        IsEmpty([Measures].[Win Sum Prev Month]) OR [Measures].[Win Sum Prev Month] = 0,
+        NULL,
+        ([Measures].[Win Sum] - [Measures].[Win Sum Prev Month])
+        / [Measures].[Win Sum Prev Month]
+    ),
+FORMAT_STRING = "Percent",
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';               
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Win Sum Delta] 
+AS
+    IIF(
+        IsEmpty([Measures].[Win Sum Prev Month]) OR [Measures].[Win Sum Prev Month] = 0,
+        NULL,
+        ([Measures].[Win Sum] - [Measures].[Win Sum Prev Month])
+    ),
+FORMAT_STRING = "$#,##0.00;($#,##0.00)",
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';           
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Loss Sum]
+ AS [Measures].[USD Loss], 
+FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';       
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Loss Sum Prev Month]
+ AS (ParallelPeriod(
+            [Date].[Month].[Month], 1,
+            [Date].[Month].CurrentMember
+        ),
+        [Measures].[Loss Sum]), 
+FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';                
+                  
+CREATE MEMBER CURRENTCUBE.[Measures].[Loss Sum Var%] 
+AS
+    IIF(
+        IsEmpty([Measures].[Loss Sum Prev Month]) OR [Measures].[Loss Sum Prev Month] = 0,
+        NULL,
+        ([Measures].[Loss Sum] - [Measures].[Loss Sum Prev Month])
+        / [Measures].[Loss Sum Prev Month]
+    ),
+FORMAT_STRING = "Percent",
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';               
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Loss Sum Delta] 
+AS
+    IIF(
+        IsEmpty([Measures].[Loss Sum Prev Month]) OR [Measures].[Loss Sum Prev Month] = 0,
+        NULL,
+        ([Measures].[Loss Sum] - [Measures].[Loss Sum Prev Month])
+    ),
+FORMAT_STRING = "$#,##0.00;($#,##0.00)",
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';       
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Winloss Sum]
+ AS [Measures].[USD Winloss], 
+FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';               
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Winloss Sum Prev Month]
+ AS (ParallelPeriod(
+            [Date].[Month].[Month], 1,
+            [Date].[Month].CurrentMember
+        ),
+        [Measures].[Winloss Sum]), 
+FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';                
+                  
+CREATE MEMBER CURRENTCUBE.[Measures].[Winloss Sum Var%] 
+AS
+    IIF(
+        IsEmpty([Measures].[Winloss Sum Prev Month]) OR [Measures].[Winloss Sum Prev Month] = 0,
+        NULL,
+        ([Measures].[Winloss Sum] - [Measures].[Winloss Sum Prev Month])
+        / [Measures].[Winloss Sum Prev Month]
+    ),
+FORMAT_STRING = "Percent",
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';   
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Winloss Sum Delta] 
+AS
+    IIF(
+        IsEmpty([Measures].[Winloss Sum Prev Month]) OR [Measures].[Winloss Sum Prev Month] = 0,
+        NULL,
+        ([Measures].[Winloss Sum] - [Measures].[Winloss Sum Prev Month])
+    ),
+FORMAT_STRING = "$#,##0.00;($#,##0.00)",
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';        
+
+
+          
+CREATE MEMBER CURRENTCUBE.[Measures].[Turnover]
+ AS [Measures].[USD Valid Stake], 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';           
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Turnover Prev Month]
+ AS (ParallelPeriod(
+            [Date].[Month].[Month], 1,
+            [Date].[Month].CurrentMember
+        ),
+        [Measures].[Turnover]), 
+FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';                
+                  
+CREATE MEMBER CURRENTCUBE.[Measures].[Turnover Var%] 
+AS
+    IIF(
+        IsEmpty([Measures].[Turnover Prev Month]) OR [Measures].[Turnover Prev Month] = 0,
+        NULL,
+        ([Measures].[Turnover] - [Measures].[Turnover Prev Month])
+        / [Measures].[Turnover Prev Month]
+    ),
+FORMAT_STRING = "Percent",
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';   
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Turnover Delta] 
+AS
+    IIF(
+        IsEmpty([Measures].[Turnover Prev Month]) OR [Measures].[Turnover Prev Month] = 0,
+        NULL,
+        ([Measures].[Turnover] - [Measures].[Turnover Prev Month])
+    ),
+FORMAT_STRING = "$#,##0.00;($#,##0.00)",
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';            
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Bets Sum]
+ AS [Measures].[Ticket Count], 
+FORMAT_STRING = "#,##0;-#,##0", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';               
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Bets Sum Prev Month]
+ AS (ParallelPeriod(
+            [Date].[Month].[Month], 1,
+            [Date].[Month].CurrentMember
+        ),
+        [Measures].[Bets Sum]), 
+FORMAT_STRING = "#,##0.00;(#,##0.00)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';   
+
+ 
+CREATE MEMBER CURRENTCUBE.[Measures].[Bets Sum Var%] 
+AS
+    IIF(
+        IsEmpty([Measures].[Bets Sum Prev Month]) OR [Measures].[Bets Sum Prev Month] = 0,
+        NULL,
+        ([Measures].[Bets Sum] - [Measures].[Bets Sum Prev Month])
+        / [Measures].[Bets Sum Prev Month]
+    ),
+FORMAT_STRING = "Percent",
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';               
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Bets Sum Delta]
+ AS IIF(
+        IsEmpty([Measures].[Bets Sum Prev Month]) OR [Measures].[Bets Sum Prev Month] = 0,
+        NULL,
+        ([Measures].[Bets Sum] - [Measures].[Bets Sum Prev Month])
+    ), 
+FORMAT_STRING = "#,##0.00;(#,##0.00)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';            
+          
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Profitability %]
+ AS (1 - ([Measures].[USD Valid Payout]/ [Measures].[USD Valid Stake])), 
+FORMAT_STRING = "Percent", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Performance Ratios';                 
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Profitability % Prev Month]
+ AS (ParallelPeriod(
+            [Date].[Month].[Month], 1,
+            [Date].[Month].CurrentMember
+        ),
+        [Measures].[Profitability %]), 
+FORMAT_STRING = "Percent", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Performance Ratios';   
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Profitability % Var%]
+ AS IIF(
+        IsEmpty([Measures].[Profitability % Prev Month]) OR [Measures].[Profitability % Prev Month] = 0,
+        NULL,
+        ([Measures].[Profitability %] - [Measures].[Profitability % Prev Month])
+        / [Measures].[Profitability % Prev Month]
+    ), 
+FORMAT_STRING = "#,##0.00%;-#,##0.00%", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Performance Ratios';               
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Profitability % Delta]
+ AS IIF(
+        IsEmpty([Measures].[Profitability % Prev Month]) OR [Measures].[Profitability % Prev Month] = 0,
+        NULL,
+        ([Measures].[Profitability %] - [Measures].[Profitability % Prev Month])
+    ), 
+FORMAT_STRING = "#,##0.00;(#,##0.00)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Performance Ratios';       
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[RTP %]
+ AS [Measures].[USD Valid Payout]/[Measures].[USD Valid Stake], 
+FORMAT_STRING = "Percent", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Performance Ratios';                            
+
+   
+CREATE MEMBER CURRENTCUBE.[Measures].[Refund Rate]
+ AS [Measures].[USD Refund]/[Measures].[USD Stake], 
+FORMAT_STRING = "Percent", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Bet Quality';                               
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Bet Size]
+ AS [Measures].[USD Stake]/[Measures].[Ticket Count], 
+FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';                              
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Win Rate]
+ AS [Measures].[USD Win]/[Measures].[Ticket Count], 
+FORMAT_STRING = "Percent", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Performance Ratios';                   
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Active Players Prev Month]
+ AS (
+        ParallelPeriod([Date].[Month].[Month], 1, [Date].[Month].CurrentMember),
+        [Measures].[Active Players]
+    ),
+FORMAT_STRING = "#,##0.00;(#,##0.00)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Player';           
+
+ 
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Active Players Var%] 
+AS
+    IIF(
+        IsEmpty([Measures].[Active Players Prev Month]) OR [Measures].[Active Players Prev Month] = 0,
+        NULL,
+        ([Measures].[Active Players] - [Measures].[Active Players Prev Month])
+        / [Measures].[Active Players Prev Month]
+    ),
+FORMAT_STRING = "Percent",
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Player';               
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Active Players Delta] 
+AS
+    IIF(
+        IsEmpty([Measures].[Active Players Prev Month]) OR [Measures].[Active Players Prev Month] = 0,
+        NULL,
+        ([Measures].[Active Players] - [Measures].[Active Players Prev Month])
+    ),
+FORMAT_STRING = "$#,##0.00;($#,##0.00)",
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Player';           
+
+CREATE MEMBER CURRENTCUBE.[Measures].[TO % by GameCategory] AS
+    IIF(
+        ( [Game].[Game Category Hierarchy].[Category].ALLMEMBERS, [Measures].[USD Valid Stake] ) = 0,
+        NULL,
+        [Measures].[USD Valid Stake] /
+        ( [Game].[Game Category Hierarchy].[Category].ALLMEMBERS, [Measures].[USD Valid Stake] )
+    ),
+FORMAT_STRING = "Percent",
+VISIBLE = 1,
+DISPLAY_FOLDER = 'Revenue &amp; Profit';   
+
+</Text>
+        </Command>
+      </Commands>
+      <CalculationProperties>
+        <CalculationProperty dwd:design-time-name="8d326bd2-86a6-416a-aa5e-e5f306755053">
+          <CalculationReference>[Measures].[Win Rate]</CalculationReference>
+          <CalculationType>Member</CalculationType>
+          <Description></Description>
+        </CalculationProperty>
+      </CalculationProperties>
+    </MdxScript>
+  </MdxScripts>
+  <Actions>
+    <Action xsi:type="DrillThroughAction" dwd:design-time-name="df9e31d4-0784-4054-bf44-db06a53620f4">
+      <ID>Drillthrough Action</ID>
+      <Name>Drillthrough Action</Name>
+      <TargetType>Cells</TargetType>
+      <Target></Target>
+      <Type>DrillThrough</Type>
+    </Action>
+  </Actions>
+</Cube>

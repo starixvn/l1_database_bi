@@ -1,0 +1,1073 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="269a87ef-2916-4d05-a122-e96f475953ce" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DWPBI</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact Bet</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="1c1a9e2d-40a7-4f92-802d-3b9380ad03d1">
+          <ID>Fact Bet 2</ID>
+          <Name>FactBet_202401</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="4b2c0ec4-c32b-415a-bda4-b978dbe73763">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2024-01-01' and '2024-01-31'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>5716434</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="1dc67d8b-9969-4814-ab20-4ad8a53f5a73">
+          <ID>Fact Bet</ID>
+          <Name>FactBet_202402</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="b394f808-c7cc-40a0-b254-100cef6d94eb">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2024-02-01' and '2024-02-29'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>7263572</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="a824c938-192d-4db8-884c-44af14c204f0">
+          <ID>Fact Bet 1</ID>
+          <Name>FactBet_202403</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="c4d159ae-70ef-484f-ad2c-3be6abc503ba">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2024-03-01' and '2024-03-31'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>8091248</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="242efb8f-44f4-4a61-848e-e3a51c348130">
+          <ID>Fact Bet 3</ID>
+          <Name>FactBet_202404</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="406ec839-7c7c-421f-80cc-9de253e572ca">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2024-04-01' and '2024-04-30'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>7881460</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="c82f8e8d-2af5-4287-9b61-6d13b9d7373d">
+          <ID>Fact Bet 4</ID>
+          <Name>FactBet_202405</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="773f1415-2f7d-4152-8084-250c612e2a38">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2024-05-01' and '2024-05-31'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>7389866</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="33bcf5cb-e13b-4ecc-9d1b-c2a869322627">
+          <ID>Fact Bet 5</ID>
+          <Name>FactBet_202406</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="0cce20d0-0e01-4acc-8bec-8dd0d88bf9f4">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2024-06-01' and '2024-06-30'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>11573500</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="8843f14f-8857-4a71-90c7-d4600b6b8f13">
+          <ID>Fact Bet 6</ID>
+          <Name>FactBet_202407</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="8208a878-b12d-4f90-8a6b-4e8d695a31e4">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2024-07-01' and '2024-07-31'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>12725884</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="f9699f0b-70c1-4852-a6bf-4392692d1564">
+          <ID>Fact Bet 7</ID>
+          <Name>FactBet_202408</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="a7dd7e30-51f5-49e3-ac2f-1076517da685">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2024-08-01' and '2024-08-31'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>8405370</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="d7e68263-6daa-48a4-8f7b-b1c12bafef10">
+          <ID>Fact Bet 8</ID>
+          <Name>FactBet_202409</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="4d70e2f1-0c26-48c3-a2a8-3ba82dcf4eac">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2024-09-01' and '2024-09-30'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>7601956</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="ee3cf790-1a81-4bf6-8d7a-a05189705627">
+          <ID>Fact Bet 9</ID>
+          <Name>FactBet_202410</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="ea87c8b0-8f16-45f9-976f-9236406956a7">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2024-10-01' and '2024-10-31'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>7123580</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="a37835d3-e28c-403a-9baf-c86a24eba46a">
+          <ID>Fact Bet 10</ID>
+          <Name>FactBet_202411</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="96dd555c-1f4a-4654-b70b-40fb859a9ddc">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2024-11-01' and '2024-11-30'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>6535808</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="dd827714-0834-4559-bd27-5c473ca9bec8">
+          <ID>Fact Bet 11</ID>
+          <Name>FactBet_202412</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="bb1b6804-3d46-4332-9a60-050204c711a8">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2024-12-01' and '2024-12-31'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>6488610</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="99bbad6c-0f81-4ff2-976e-e02216410822">
+          <ID>Fact Bet 12</ID>
+          <Name>FactBet_202501</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="b17da72a-db96-4875-b122-4815b9e97338">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2025-01-01' and '2025-01-31'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>5803464</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="f775114c-efab-42a0-aa19-7acbb77c7ad1">
+          <ID>Fact Bet 13</ID>
+          <Name>FactBet_202502</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="034ff3f4-98fe-4971-bb29-3f63d59cbe3c">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2025-02-01' and '2025-02-28'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>5868512</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="b77b2038-ecd0-4f20-a5c8-3ecff4e12c1a">
+          <ID>Fact Bet 1 1</ID>
+          <Name>FactBet_202503</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="e7c2ece0-f0e8-44a9-9bde-0a99ca896135">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2025-03-01' and '2025-03-31'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>7497182</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="2ef4e911-9607-470d-b8bd-2d81a90b0d37">
+          <ID>Fact Bet 2 1</ID>
+          <Name>FactBet_202504</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="67defeca-2cba-4228-bd00-cd41ae467f62">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2025-04-01' and '2025-04-30'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>6673528</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="dd1caefc-4c7f-40aa-91c5-bce42452bc2b">
+          <ID>Fact Bet 14</ID>
+          <Name>FactBet_202505</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="0bc6e91c-0425-466f-858d-783b90e9c9d7">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2025-05-01' and '2025-05-31'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>37702</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="67a566c9-6185-40f3-aa6a-9ba22baeeb9d">
+          <ID>Fact Bet 1 2</ID>
+          <Name>FactBet_202506</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="50dc162a-e47f-4c8f-a079-623b64e45e84">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2025-06-01' and '2025-06-30'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="46a684bb-e607-4c5e-aebf-617ff543695a">
+          <ID>Fact Bet 2 2</ID>
+          <Name>FactBet_202507</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="b90f076b-b62a-408e-923e-ce4cbbfb048a">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2025-07-01' and '2025-07-31'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="d61f00b1-3a2b-4ec0-a850-52c416ef4cd4">
+          <ID>Fact Bet 15</ID>
+          <Name>FactBet_202508_12</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="21e7426b-73a2-4cfd-8838-df1f09fa80d5">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2025-08-01' and '2025-12-31'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+      </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>AggregationDesign</ID>
+          <Name>AggregationDesign</Name>
+          <CreatedTimestamp>2025-06-03T07:01:25.28Z</CreatedTimestamp>
+          <LastSchemaUpdate>2025-06-03T07:01:25.28Z</LastSchemaUpdate>
+          <EstimatedRows>12725884</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>Date</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Datekey</AttributeID>
+                  <EstimatedCount>29220</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Year</AttributeID>
+                  <EstimatedCount>80</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Half Year</AttributeID>
+                  <EstimatedCount>160</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Quarter</AttributeID>
+                  <EstimatedCount>320</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Month</AttributeID>
+                  <EstimatedCount>960</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Player</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Player ID</AttributeID>
+                  <EstimatedCount>897234</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Currency</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Currency Code</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Currency Group Id</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Join Time</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Nick Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Operator Player Id</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Reg Time</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Site Name</AttributeID>
+                  <EstimatedCount>475</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Operator Id</AttributeID>
+                  <EstimatedCount>8</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Game</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Game Id</AttributeID>
+                  <EstimatedCount>223</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Product Id</AttributeID>
+                  <EstimatedCount>3</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sub Game Category</AttributeID>
+                  <EstimatedCount>32</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Game Category</AttributeID>
+                  <EstimatedCount>17</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Player</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Operator Id</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Game</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sub Game Category</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Half Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Player</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Game</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Bet 1</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="3a98ff01-7d7f-4839-8ddf-cedda410e621">
+          <ID>Fact Bet 2</ID>
+          <Name>FactBet_202401</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="cd499b6e-0b04-4d32-b7ba-641d41c5d7a1">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2024-01-01' and '2024-01-31'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>5716434</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="c873dd2b-f4ef-4146-adf3-5f34060f0881">
+          <ID>Fact Bet</ID>
+          <Name>FactBet_202402</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="01c7a6bc-98a6-44d9-bb54-17c7f50c9846">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2024-02-01' and '2024-02-29'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>7263572</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="b262a899-dc87-494d-908f-8af5613df1bb">
+          <ID>Fact Bet 1</ID>
+          <Name>FactBet_202403</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="e3d071b7-754f-4479-878c-5683755f530e">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2024-03-01' and '2024-03-31'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>8091248</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="e6122018-a987-479a-983b-fde8b8115f0e">
+          <ID>Fact Bet 3</ID>
+          <Name>FactBet_202404</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="640a6543-d133-474b-a2c7-88fbe2a38a01">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2024-04-01' and '2024-04-30'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>7881460</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="a8f34fc0-8361-4d04-8344-7ce380507621">
+          <ID>Fact Bet 4</ID>
+          <Name>FactBet_202405</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="8dd2cc81-f38b-4811-9a65-c83bb8b6eba9">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2024-05-01' and '2024-05-31'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>7389866</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="2ddae283-2f1d-4f1a-a9ad-c648b46e81ce">
+          <ID>Fact Bet 5</ID>
+          <Name>FactBet_202406</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="6e61868d-45eb-47ff-bc03-c04a3d60bc19">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2024-06-01' and '2024-06-30'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>11573500</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="9279f33a-9144-468f-83b4-53824f74a91d">
+          <ID>Fact Bet 6</ID>
+          <Name>FactBet_202407</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="bbf0023a-69e6-4568-9096-6153ecd4a164">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2024-07-01' and '2024-07-31'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>12725884</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="1a1e1bfb-5e2a-4369-9e3d-5083ae30dbd6">
+          <ID>Fact Bet 7</ID>
+          <Name>FactBet_202408</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="b048198f-b86e-4823-b369-bd1f1d27f023">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2024-08-01' and '2024-08-31'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>8405370</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="fe744cf9-696d-4b72-88a1-6429b4df49c0">
+          <ID>Fact Bet 8</ID>
+          <Name>FactBet_202409</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="8b77add8-bf55-44e8-968d-674eb4fe1e89">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2024-09-01' and '2024-09-30'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>7601956</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="0711731f-9595-4922-81df-dba8c34ae26f">
+          <ID>Fact Bet 9</ID>
+          <Name>FactBet_202410</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="f71725b7-ac91-44e4-a031-cc742dc28748">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2024-10-01' and '2024-10-31'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>7123580</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="89ae29aa-8d21-4332-829e-34ed24f7167e">
+          <ID>Fact Bet 10</ID>
+          <Name>FactBet_202411</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="bfdcd90c-2412-494d-ab70-0031d2f2f965">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2024-11-01' and '2024-11-30'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>6535808</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="aa1557b2-0417-455b-ad23-349abbd2d624">
+          <ID>Fact Bet 11</ID>
+          <Name>FactBet_202412</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="d016f36f-b552-4e85-911f-900032376eb4">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2024-12-01' and '2024-12-31'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>6488610</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="f7781060-17a1-4fff-8645-94652e614c42">
+          <ID>Fact Bet 12</ID>
+          <Name>FactBet_202501</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="3fcd39b1-d384-4bb2-b82b-dcbcc2be0166">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2025-01-01' and '2025-01-31'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>5803464</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="046122a7-aa4e-4ace-abb0-c86bd4ffe20f">
+          <ID>Fact Bet 13</ID>
+          <Name>FactBet_202502</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="8cefa715-3684-4914-b32a-4c48571dbc27">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2025-02-01' and '2025-02-28'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>5868512</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="f5d78764-39b8-49c1-91dc-09d8429ca908">
+          <ID>Fact Bet 1 1</ID>
+          <Name>FactBet_202503</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="26769afb-ee1d-4b74-9de4-5e58ba3b856c">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2025-03-01' and '2025-03-31'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>7497182</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="91fc506b-6b85-4b0e-8f92-6daf7d291497">
+          <ID>Fact Bet 2 1</ID>
+          <Name>FactBet_202504</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="45b775ff-6887-4cfb-9ccf-18c1f0ba9bca">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2025-04-01' and '2025-04-30'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>6673528</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="1e43a355-d3cd-4c04-8eeb-c0fb25a84e80">
+          <ID>Fact Bet 14</ID>
+          <Name>FactBet_202505</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="19303ae6-619d-4ca8-84b3-e9bafaef7539">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2025-05-01' and '2025-05-31'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <EstimatedRows>37702</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="8cd563e1-7892-4827-8599-c82088596786">
+          <ID>Fact Bet 1 2</ID>
+          <Name>FactBet_202506</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="8e28502f-7bae-44dc-933d-1a863099fdab">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2025-06-01' and '2025-06-30'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="a63d8ea1-0a18-48ef-9143-f086612efb4e">
+          <ID>Fact Bet 2 2</ID>
+          <Name>FactBet_202507</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="ce8dedf4-8ead-4552-9c19-8cbb51f0f151">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2025-07-01' and '2025-07-31'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+        <Partition dwd:design-time-name="1cd9150b-2fd7-443a-8eb3-d97642c64ae4">
+          <ID>Fact Bet 15</ID>
+          <Name>FactBet_202508_12</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="a546f134-bcfc-4302-84e5-8df036dba104">
+            <DataSourceID>DWPBI</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
+  FROM [dbo].[FactBet]
+		WHERE Datekey between '2025-08-01' and '2025-12-31'</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+      </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>AggregationDesign</ID>
+          <Name>AggregationDesign</Name>
+          <CreatedTimestamp>2025-06-03T07:01:25.28Z</CreatedTimestamp>
+          <LastSchemaUpdate>2025-06-03T07:01:25.28Z</LastSchemaUpdate>
+          <EstimatedRows>12725884</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>Date</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Datekey</AttributeID>
+                  <EstimatedCount>29220</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Year</AttributeID>
+                  <EstimatedCount>80</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Half Year</AttributeID>
+                  <EstimatedCount>160</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Quarter</AttributeID>
+                  <EstimatedCount>320</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Month</AttributeID>
+                  <EstimatedCount>960</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Player</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Player ID</AttributeID>
+                  <EstimatedCount>897234</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Currency</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Currency Code</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Currency Group Id</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Join Time</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Nick Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Operator Player Id</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Reg Time</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Site Name</AttributeID>
+                  <EstimatedCount>475</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Operator Id</AttributeID>
+                  <EstimatedCount>8</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Game</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Game Id</AttributeID>
+                  <EstimatedCount>223</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Product Id</AttributeID>
+                  <EstimatedCount>3</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sub Game Category</AttributeID>
+                  <EstimatedCount>32</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Game Category</AttributeID>
+                  <EstimatedCount>17</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Player</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Operator Id</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Game</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Sub Game Category</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Date</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Calendar Half Year</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Player</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Game</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Player</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="a680d231-fb0b-494a-97a8-87b9d7c7299b">
+          <ID>Player</ID>
+          <Name>Player 1</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a5ba6318-0a97-4a17-80a9-a79a95967c7e">
+            <DataSourceViewID>DWPBI</DataSourceViewID>
+            <TableID>dbo_DimPlayer1</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

@@ -1,0 +1,425 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ed7868f7-526b-4392-9932-200e80414045" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Player</ID>
+  <Name>Player</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3724" scrolltop="-8070" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="14923" y="21140" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Player" left="-324" top="-3122" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3307" height="8651" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000eb0c0000cb210000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimPlayer1" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3724</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-8070</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-324</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-3122</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="145">
+            <Shape Id="Player ID" Expanded="false">
+              <Attributes>
+                <Attribute Id="Player ID" />
+                <Attribute Id="Currency" />
+                <Attribute Id="Currency Code" />
+                <Attribute Id="Currency Group Id" />
+                <Attribute Id="Join Time" />
+                <Attribute Id="Nick Name" />
+                <Attribute Id="Operator Player Id" />
+                <Attribute Id="Reg Time" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Site Name" Expanded="false">
+              <Attributes>
+                <Attribute Id="Site Name" />
+              </Attributes>
+              <Position x="206" y="20" />
+            </Shape>
+            <Shape Id="Operator Id" Expanded="false">
+              <Attributes>
+                <Attribute Id="Operator Id" />
+              </Attributes>
+              <Position x="392" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="29bcd699-5688-483a-9724-87aea918b70e">
+    <DataSourceViewID>DWPBI</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="7ae0d5ac-85e7-4468-a2ea-6257f393ff7f">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <UnknownMemberName>[Unknown]</UnknownMemberName>
+  <Attributes>
+    <Attribute dwd:design-time-name="8e993d63-1fec-4ba3-86fb-a2b6a6ce8a3b">
+      <ID>Player ID</ID>
+      <Name>PlayerId</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>897234</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="19daa5c5-319b-45be-b4a3-5d8dcde5b131">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ec3ca2b0-2eb9-49cd-a231-be945b30abcc">
+            <TableID>dbo_DimPlayer1</TableID>
+            <ColumnID>systemId</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="4835c1eb-25ed-4508-bcd4-76fd2f4c368e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="66218f1f-6000-44f4-bebe-02dcb346d482">
+            <TableID>dbo_DimPlayer1</TableID>
+            <ColumnID>operatorId</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="d07644f6-28e8-490b-a668-2dcf9140c340">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e3006042-2e58-4ec1-9f11-1b8c32329093">
+            <TableID>dbo_DimPlayer1</TableID>
+            <ColumnID>PlayerID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="cc5165b5-cd24-429c-add2-de92476b1964">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5c8ee1dd-7d7d-4ce0-83c1-6b9525c6c736">
+          <TableID>dbo_DimPlayer1</TableID>
+          <ColumnID>PlayerName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="11bb0eed-e31a-488a-a3d0-af1659975e1f">
+          <AttributeID>Currency</AttributeID>
+          <Name>Currency</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="48f8f392-d75e-416b-94cb-478cc431f717">
+          <AttributeID>Currency Code</AttributeID>
+          <Name>Currency Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b3e437bf-b898-4306-9f34-b6d38a8b1cd6">
+          <AttributeID>Currency Group Id</AttributeID>
+          <Name>Currency Group Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5abb5232-294f-40be-b1b5-0c212015fb65">
+          <AttributeID>Join Time</AttributeID>
+          <Name>Join Time</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4827fa71-9dbb-4b57-ba44-380afc5611cc">
+          <AttributeID>Nick Name</AttributeID>
+          <Name>Nick Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1ae5e1d9-44f6-43bf-989f-4e61783c5caf">
+          <AttributeID>Operator Player Id</AttributeID>
+          <Name>Operator Player Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0e099a33-aa97-4837-ac85-9ccff818af89">
+          <AttributeID>Reg Time</AttributeID>
+          <Name>Reg Time</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9d8bbd23-4e78-43a7-81f3-0c5350b298dd">
+          <AttributeID>Site Name</AttributeID>
+          <Name>Site Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1f98d606-64de-485d-9065-c438576f44da">
+          <AttributeID>Date Key</AttributeID>
+          <Name>Date Key</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b7eff208-7046-490e-90a6-63bf967e96b5">
+      <ID>Currency</ID>
+      <Name>Currency</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0d679398-b85c-438a-9453-ebf1fb5da967">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="22eb1a2e-b4b8-4b67-b205-25199c86e81b">
+            <TableID>dbo_DimPlayer1</TableID>
+            <ColumnID>currency</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="411441c7-dc4d-4efa-88be-2cb8cd05f628">
+      <ID>Currency Code</ID>
+      <Name>Currency Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="56ddeca3-d8a0-4c05-827f-e34176e97550">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d1e4aa1b-6816-4994-a291-f0b4f08cc6e9">
+            <TableID>dbo_DimPlayer1</TableID>
+            <ColumnID>currencyCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a2d1dff7-264d-4ffa-82ac-379518c236ae">
+      <ID>Currency Group Id</ID>
+      <Name>Currency Group</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="303d6bf6-c5f2-4356-9fc2-b37da88b7506">
+          <DataType>WChar</DataType>
+          <DataSize>24</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a23714b6-4619-4b72-815a-3d99be42c000">
+            <TableID>dbo_DimPlayer1</TableID>
+            <ColumnID>currencyGroupId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ad2ba2b5-99b5-4545-b9d1-37218da666b2">
+      <ID>Join Time</ID>
+      <Name>Join Time</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="657de860-4a8d-4cd7-9137-e2842231fa39">
+          <DataType>WChar</DataType>
+          <DataSize>23</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c351f3b8-078e-4c9d-af02-309e801a2d32">
+            <TableID>dbo_DimPlayer1</TableID>
+            <ColumnID>joinTime</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4a8de765-482e-48cd-9ce4-13c7bf76add7">
+      <ID>Nick Name</ID>
+      <Name>Nick Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="43c3976c-53ce-4089-842c-d180173f6391">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="caf3312c-c8b5-4842-a288-30ed1b3c7770">
+            <TableID>dbo_DimPlayer1</TableID>
+            <ColumnID>nickName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="159389fa-d064-4fc5-81b2-725877586cd7">
+      <ID>Operator Player Id</ID>
+      <Name>Operator Player Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="51dd47ec-0b86-423e-a762-81013b69f5b3">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="76e0dea5-4b24-4102-a328-f62d234eeb86">
+            <TableID>dbo_DimPlayer1</TableID>
+            <ColumnID>operatorPlayerId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c8345727-75c8-426e-b39c-e268f4fc9be3">
+      <ID>Reg Time</ID>
+      <Name>Reg Time</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7e353298-03d3-4b87-a96d-3e4f901c8ba4">
+          <DataType>WChar</DataType>
+          <DataSize>23</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e7b9c898-8ce5-4b68-b420-592bff733b38">
+            <TableID>dbo_DimPlayer1</TableID>
+            <ColumnID>regTime</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="04973a56-f7f8-4acd-950e-f284f381a552">
+      <ID>Site Name</ID>
+      <Name>SiteId</Name>
+      <EstimatedCount>475</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d14595e0-ed5e-45d5-9fd6-c90bf6504aa7">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cbaea70c-1051-4dcb-a1a0-fd449af72ec2">
+            <TableID>dbo_DimPlayer1</TableID>
+            <ColumnID>operatorId</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="ecae4b3b-18d2-4581-bd98-5407bd9566b9">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="43d7caaf-071c-4e56-8470-4bdd2298b200">
+            <TableID>dbo_DimPlayer1</TableID>
+            <ColumnID>siteName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="bc18d5ec-8fe4-41f0-ac44-dc15636fe8b8">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c8a39fcd-19cf-4d5b-a2de-60c6fa818a9b">
+          <TableID>dbo_DimPlayer1</TableID>
+          <ColumnID>siteName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="e346eecd-f13b-418b-a0b1-f0fa54c48239">
+          <AttributeID>Operator Id</AttributeID>
+          <Name>Operator Id</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="52fa7b22-93c6-4ef8-9ffd-2940e4122a63">
+      <ID>Operator Id</ID>
+      <Name>OperatorId</Name>
+      <EstimatedCount>8</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="35051f0c-7f58-4ce9-ba3b-b2ff9cfb0d4d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a1409e0b-c0f4-4a27-afaa-30c5bf162358">
+            <TableID>dbo_DimPlayer1</TableID>
+            <ColumnID>operatorId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="4c805d0e-d4a9-4fd9-97d5-3463820d11e7">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="bea4b6d2-f79b-4f29-9265-f072fa276950">
+          <TableID>dbo_DimPlayer1</TableID>
+          <ColumnID>operatorId</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="36f7c472-f946-495a-b18b-cf829cf4f645">
+      <ID>Date Key</ID>
+      <Name>Date Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ff1f0acf-9aff-492b-9dd5-01d52a595766">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1b173029-a3ab-486c-bd9b-3653d7d552e7">
+            <TableID>dbo_DimPlayer1</TableID>
+            <ColumnID>DateKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="47de8e55-fc9d-4e5d-b460-910e203e70f0">
+      <ID>Hierarchy</ID>
+      <Name>Player Hierarchy</Name>
+      <AllMemberName>All Players</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="4e8eb011-cfb9-4bc0-8271-020ecf9da852">
+          <ID>Operator Id</ID>
+          <Name>Operator Id</Name>
+          <SourceAttributeID>Operator Id</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="a36c50ee-730b-4f3c-91de-ce4008245e45">
+          <ID>Site Name</ID>
+          <Name>Site Name</Name>
+          <SourceAttributeID>Site Name</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="ee1a40b9-4335-422f-9a81-5a6ae07675c2">
+          <ID>PlayerId</ID>
+          <Name>PlayerId</Name>
+          <SourceAttributeID>Player ID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

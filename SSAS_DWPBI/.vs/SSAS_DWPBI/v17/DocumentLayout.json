@@ -1,0 +1,110 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Working\\PowerBI\\SSAS_DWPBI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C8761C08-3473-D097-E0A3-7B10A7132D82}|SSAS_DWPBI.dwproj|D:\\Working\\PowerBI\\SSAS_DWPBI\\DWPBI.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{C8761C08-3473-D097-E0A3-7B10A7132D82}|SSAS_DWPBI.dwproj|solutionrelative:DWPBI.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8761C08-3473-D097-E0A3-7B10A7132D82}|SSAS_DWPBI.dwproj|D:\\Working\\PowerBI\\SSAS_DWPBI\\Time.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{C8761C08-3473-D097-E0A3-7B10A7132D82}|SSAS_DWPBI.dwproj|solutionrelative:Time.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8761C08-3473-D097-E0A3-7B10A7132D82}|SSAS_DWPBI.dwproj|D:\\Working\\PowerBI\\SSAS_DWPBI\\MetricSelector.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{C8761C08-3473-D097-E0A3-7B10A7132D82}|SSAS_DWPBI.dwproj|solutionrelative:MetricSelector.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8761C08-3473-D097-E0A3-7B10A7132D82}|SSAS_DWPBI.dwproj|D:\\Working\\PowerBI\\SSAS_DWPBI\\DWPBI.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{C8761C08-3473-D097-E0A3-7B10A7132D82}|SSAS_DWPBI.dwproj|solutionrelative:DWPBI.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8761C08-3473-D097-E0A3-7B10A7132D82}|SSAS_DWPBI.dwproj|D:\\Working\\PowerBI\\SSAS_DWPBI\\Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{C8761C08-3473-D097-E0A3-7B10A7132D82}|SSAS_DWPBI.dwproj|solutionrelative:Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 278,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MetricSelector.dim [Design]",
+              "DocumentMoniker": "D:\\Working\\PowerBI\\SSAS_DWPBI\\MetricSelector.dim",
+              "RelativeDocumentMoniker": "MetricSelector.dim",
+              "ToolTip": "D:\\Working\\PowerBI\\SSAS_DWPBI\\MetricSelector.dim [Design]",
+              "RelativeToolTip": "MetricSelector.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-18T05:44:32.8Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Date.dim [Design]",
+              "DocumentMoniker": "D:\\Working\\PowerBI\\SSAS_DWPBI\\Date.dim",
+              "RelativeDocumentMoniker": "Date.dim",
+              "ToolTip": "D:\\Working\\PowerBI\\SSAS_DWPBI\\Date.dim [Design]",
+              "RelativeToolTip": "Date.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-18T03:03:45.608Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DWPBI.dsv [Design]",
+              "DocumentMoniker": "D:\\Working\\PowerBI\\SSAS_DWPBI\\DWPBI.dsv",
+              "RelativeDocumentMoniker": "DWPBI.dsv",
+              "ToolTip": "D:\\Working\\PowerBI\\SSAS_DWPBI\\DWPBI.dsv [Design]",
+              "RelativeToolTip": "DWPBI.dsv [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-18T02:51:20.957Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Time.dim [Design]",
+              "DocumentMoniker": "D:\\Working\\PowerBI\\SSAS_DWPBI\\Time.dim",
+              "RelativeDocumentMoniker": "Time.dim",
+              "ToolTip": "D:\\Working\\PowerBI\\SSAS_DWPBI\\Time.dim [Design]",
+              "RelativeToolTip": "Time.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-18T02:46:19.094Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DWPBI.cube [Design]",
+              "DocumentMoniker": "D:\\Working\\PowerBI\\SSAS_DWPBI\\DWPBI.cube",
+              "RelativeDocumentMoniker": "DWPBI.cube",
+              "ToolTip": "D:\\Working\\PowerBI\\SSAS_DWPBI\\DWPBI.cube [Design]",
+              "RelativeToolTip": "DWPBI.cube [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-10T01:51:52.159Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 122,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

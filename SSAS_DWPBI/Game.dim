@@ -1,0 +1,397 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="36b13189-ff2a-436e-a318-7ca7141c0e0b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Game</ID>
+  <Name>Game</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3877" scrolltop="-9327" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="14605" y="21802" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Game" left="-873" top="-3651" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="5265" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000091140000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimGame" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3877</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-9327</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-873</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-3651</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="112">
+            <Shape Id="Game Id" Expanded="false">
+              <Attributes>
+                <Attribute Id="Game Id" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Sub Game Category 1" Expanded="false">
+              <Attributes>
+                <Attribute Id="Sub Game Category 1" />
+              </Attributes>
+              <Position x="165" y="20" />
+            </Shape>
+            <Shape Id="Game Category 1" Expanded="false">
+              <Attributes>
+                <Attribute Id="Game Category 1" />
+              </Attributes>
+              <Position x="310" y="20" />
+            </Shape>
+            <Shape Id="Sub Game Category" Expanded="false">
+              <Attributes>
+                <Attribute Id="Sub Game Category" />
+              </Attributes>
+              <Position x="165" y="68" />
+            </Shape>
+            <Shape Id="Game Category" Expanded="false">
+              <Attributes>
+                <Attribute Id="Game Category" />
+              </Attributes>
+              <Position x="310" y="68" />
+            </Shape>
+            <Shape Id="Product Id" Expanded="false">
+              <Attributes>
+                <Attribute Id="Product Id" />
+              </Attributes>
+              <Position x="455" y="68" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="f8837eb7-70be-41d2-925e-5e7eb7cb7467">
+    <DataSourceViewID>DWPBI</DataSourceViewID>
+  </Source>
+  <UnknownMember>Hidden</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="19b68b5e-1419-4c02-b4d5-9a4c61c48d17">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="253fcf59-56cf-4b71-8a20-7049aa761357">
+      <ID>Game Id</ID>
+      <Name>GameId</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>223</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d28f38ae-8e3b-4a6d-b198-ad6632bb216b">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="56c33503-40de-465b-a45b-b89e79e9e1da">
+            <TableID>dbo_DimGame</TableID>
+            <ColumnID>GameId</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="8709fc6f-45ce-4c68-a3b6-a1147919f836">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ad3707d9-3c66-4e11-8d08-65133330497e">
+            <TableID>dbo_DimGame</TableID>
+            <ColumnID>ProductId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="a8899a91-824a-4d77-b906-81e6327c8d68">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d9b73690-de2e-4111-b8d9-d5a17c6e1f40">
+          <TableID>dbo_DimGame</TableID>
+          <ColumnID>GameName</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="3bdecec9-49f2-4495-b307-6f38f596b4f2">
+          <AttributeID>Sub Game Category</AttributeID>
+          <Name>Sub Game Category</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4f0e3390-da1a-4fdf-916e-8e130100dc87">
+          <AttributeID>Sub Game Category 1</AttributeID>
+          <Name>Sub Category</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3444406f-8f69-45c9-b2dd-4bf6aebb1126">
+          <AttributeID>Game Id 1</AttributeID>
+          <Name>Game</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="36d21f6f-bf1f-411f-af3c-df7c81b1217b">
+      <ID>Product Id</ID>
+      <Name>ProductId</Name>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="66f2869e-f9ab-475a-9531-363d68ad6499">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="583cbf10-df67-48e0-9cde-157eb6cab003">
+            <TableID>dbo_DimGame</TableID>
+            <ColumnID>ProductId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="a8aa2dd2-73e1-4c28-8556-263730a3163f">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="66eb85bb-e0fc-494b-b2ab-78ee695ce358">
+          <TableID>dbo_DimGame</TableID>
+          <ColumnID>ProductName</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f9443492-8661-4d95-97eb-73aed4d10c02">
+      <ID>Sub Game Category</ID>
+      <Name>Sub Game Category</Name>
+      <EstimatedCount>32</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7b6457d7-d642-477c-96ef-2940dd084231">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7b21c6b3-a39d-42f4-82ef-49daed42c9de">
+            <TableID>dbo_DimGame</TableID>
+            <ColumnID>ProductId</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="4c0c831d-fccf-42ce-a349-c42ae702c0c9">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b25c8323-b605-46b6-94d5-bba1c715a0e1">
+            <TableID>dbo_DimGame</TableID>
+            <ColumnID>GameCategory</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="d2c011e4-edb4-4fc8-aa7d-d7b9c609ff44">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a023b8b5-7d18-4065-8183-a9d02ba1367b">
+            <TableID>dbo_DimGame</TableID>
+            <ColumnID>SubGameCategory</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="98bdd7ff-292a-4fb0-989c-4a65ae390265">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="8a76ad74-c886-442b-a17b-2838107d8ba3">
+          <TableID>dbo_DimGame</TableID>
+          <ColumnID>SubGameCategory</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="1b5a28fe-0160-4bbc-8ed2-a277f83d9824">
+          <AttributeID>Game Category</AttributeID>
+          <Name>Game Category</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d53f3117-520d-4001-ae8f-4c6908e48422">
+      <ID>Game Category</ID>
+      <Name>Game Category</Name>
+      <EstimatedCount>17</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="57444158-8aaa-4ad1-abc3-964e8881a6b5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="92a9259b-0ac9-47dd-9678-ad9b449eaa1c">
+            <TableID>dbo_DimGame</TableID>
+            <ColumnID>ProductId</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="2782902b-632f-4528-8cb4-28994e4e67fa">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="02279701-e5c6-45c2-a256-4773e25b57ac">
+            <TableID>dbo_DimGame</TableID>
+            <ColumnID>GameCategory</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="36c6595a-3722-4968-901a-4601a3f3911f">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2a8742dc-f9d7-4951-b3be-f4531be9f60e">
+          <TableID>dbo_DimGame</TableID>
+          <ColumnID>GameCategory</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="f64f9882-a9b7-44ed-8a38-56f72fbaa47a">
+          <AttributeID>Product Id</AttributeID>
+          <Name>ProductId</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="58846964-a60d-4351-9b71-663e991f9865">
+      <ID>Game Category 1</ID>
+      <Name>Category</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6180ecdd-d30e-443a-b1cb-70ae126dccbc">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b32cec49-1339-4215-9936-0a0814002e58">
+            <TableID>dbo_DimGame</TableID>
+            <ColumnID>GameCategory</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9a81487c-e29e-485a-bc51-e59e3bfe3047">
+      <ID>Sub Game Category 1</ID>
+      <Name>Sub Category</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bfb367c0-9988-41ec-a3d6-8df384e6e504">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a70d6e54-bc5c-4722-a1b5-bbbfea01d270">
+            <TableID>dbo_DimGame</TableID>
+            <ColumnID>SubGameCategory</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="de5884a8-8a98-4570-becb-fa98d38772f4">
+          <AttributeID>Game Category 1</AttributeID>
+          <Name>Category</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="96df4b6c-73aa-4a5f-9da1-831e852582cb">
+      <ID>Game Id 1</ID>
+      <Name>Game</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="51c42af1-5b41-431e-86f6-424f6cdc25f4">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="98c09a18-efe3-4796-be4e-106c7f0f24ae">
+            <TableID>dbo_DimGame</TableID>
+            <ColumnID>GameId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="2c986d35-d82f-4eca-b6be-0425f9c96119">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="27a00207-b6d0-4a6c-a525-16358899bb26">
+          <TableID>dbo_DimGame</TableID>
+          <ColumnID>GameName</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="cfc20e03-8c25-45ee-9072-2ac62c945547">
+      <ID>Hierarchy</ID>
+      <Name>Game By Product Hierarchy</Name>
+      <AllMemberName>All Games</AllMemberName>
+      <Levels>
+        <Level dwd:design-time-name="db152952-7864-4c45-8914-29346a5ff965">
+          <ID>ProductId</ID>
+          <Name>ProductId</Name>
+          <SourceAttributeID>Product Id</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="a342ee4f-a732-41e6-8049-415d9fa7cf12">
+          <ID>Game Category</ID>
+          <Name>Game Category</Name>
+          <SourceAttributeID>Game Category</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="a7b95994-d22d-4ec0-90ca-1b269810989e">
+          <ID>Sub Game Category</ID>
+          <Name>Sub Game Category</Name>
+          <SourceAttributeID>Sub Game Category</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="a5274de0-6b43-431e-b66b-3c0f37319974">
+          <ID>GameId</ID>
+          <Name>GameId</Name>
+          <SourceAttributeID>Game Id</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="2ce84ca7-f1ce-4175-b1c8-b9aad0017c8f">
+      <ID>Hierarchy 1</ID>
+      <Name>Game Category Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="1e3ab5b0-485a-402d-8ffc-169ab1c32127">
+          <ID>Category</ID>
+          <Name>Category</Name>
+          <SourceAttributeID>Game Category 1</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="b6db89f9-0202-47f8-964d-b70483efe486">
+          <ID>Sub Category</ID>
+          <Name>Sub Category</Name>
+          <SourceAttributeID>Sub Game Category 1</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

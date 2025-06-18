@@ -1,0 +1,21 @@
+
+WITH 
+MEMBER [Measures].[Prev Month Active Players] AS
+    (
+        ParallelPeriod([Date].[Month].[Month], 1, [Date].[Month].CurrentMember),
+        [Measures].[Active Player Count]
+    )
+MEMBER [Measures].[MoM Active Player %] AS
+    IIF(
+        [Measures].[Prev Month Active Players] = 0,
+        NULL,
+        ([Measures].[Active Player Count] - [Measures].[Prev Month Active Players])
+        / [Measures].[Prev Month Active Players] * 100
+    )
+SELECT {
+    [Measures].[Active Player Count],
+    [Measures].[Prev Month Active Players],
+	[Measures].[MoM Active Player %]
+} ON COLUMNS,
+[Date].[Month].MEMBERS ON ROWS
+FROM [DWPBI]
