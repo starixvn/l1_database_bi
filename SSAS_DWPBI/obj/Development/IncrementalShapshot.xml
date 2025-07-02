@@ -8,7 +8,7 @@
     <TransactionalDeployment>false</TransactionalDeployment>
     <PartitionDeployment>DeployPartitions</PartitionDeployment>
     <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
-    <ProcessingOption>Default</ProcessingOption>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
     <OutputScript></OutputScript>
     <ImpactAnalysisFile></ImpactAnalysisFile>
     <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
@@ -19,70 +19,70 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>+kyDYWgIvptjJ0coht8efqgB0oE=5/21/2025 11:10:06 AM5/21/2025 11:10:06 AM</TimeStamp>
+        <TimeStamp>+kyDYWgIvptjJ0coht8efqgB0oE=5/21/2025 11:10:06 AM6/18/2025 2:53:14 PM</TimeStamp>
         <ID>
           <String>DWPBI</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>qFwGmdkdIypMtyGuv9O7EBXlRfw=6/18/2025 10:53:14 AM5/21/2025 11:10:40 AM</TimeStamp>
+        <TimeStamp>qFwGmdkdIypMtyGuv9O7EBXlRfw=6/18/2025 10:53:14 AM6/18/2025 2:53:14 PM</TimeStamp>
         <ID>
           <String>DWPBI</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>U852Q6pL7RF2BPJCCQCTsKWuaKs=6/16/2025 3:19:00 PM5/21/2025 11:17:25 AM</TimeStamp>
+        <TimeStamp>45I8IexyU/KwihSpCgA+bp4S+cA=7/1/2025 5:05:18 PM6/18/2025 2:53:14 PM</TimeStamp>
         <ID>
           <String>Date</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>J6ApAHny43FIPrdp0CT44s69uUM=6/16/2025 2:41:12 PM5/30/2025 1:05:50 PM</TimeStamp>
+        <TimeStamp>J6ApAHny43FIPrdp0CT44s69uUM=6/16/2025 2:41:12 PM6/18/2025 2:53:14 PM</TimeStamp>
         <ID>
           <String>Player</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>X7qQQaGHbaswSZM9fhF4LXJV4V4=6/10/2025 4:09:02 PM5/30/2025 1:40:12 PM</TimeStamp>
+        <TimeStamp>X7qQQaGHbaswSZM9fhF4LXJV4V4=6/10/2025 4:09:02 PM6/18/2025 2:53:14 PM</TimeStamp>
         <ID>
           <String>Game</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>6pMPThfYwiRW+bNJotKEYYLRIUI=6/12/2025 3:24:38 PM6/12/2025 2:00:02 PM</TimeStamp>
+        <TimeStamp>6pMPThfYwiRW+bNJotKEYYLRIUI=6/12/2025 3:24:38 PM6/18/2025 2:53:14 PM</TimeStamp>
         <ID>
           <String>Product</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>A6R5vJT4xfPo90UuDv5o+4AAvKw=6/12/2025 2:00:15 PM6/12/2025 2:00:15 PM</TimeStamp>
+        <TimeStamp>A6R5vJT4xfPo90UuDv5o+4AAvKw=6/12/2025 2:00:15 PM6/18/2025 2:53:14 PM</TimeStamp>
         <ID>
           <String>System</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>zj3OMuKDW3qxfWK4YY/8B4Fpkw4=6/16/2025 10:51:20 AM6/12/2025 4:00:00 PM</TimeStamp>
+        <TimeStamp>zj3OMuKDW3qxfWK4YY/8B4Fpkw4=6/16/2025 10:51:20 AM6/18/2025 2:53:14 PM</TimeStamp>
         <ID>
           <String>MetricSelector</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>sYoph5mq/l9bS9ExboPQLAyYIc0=6/18/2025 12:38:25 PM6/16/2025 2:49:37 PM</TimeStamp>
+        <TimeStamp>/A2sHpdj2R4AFmV50h7w67Qw420=7/1/2025 5:44:11 PM6/18/2025 2:53:14 PM</TimeStamp>
         <ID>
           <String>Time</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>9tF2SQgbKPEduSwcD/9vBXHjFAk=6/18/2025 12:42:00 PM5/21/2025 11:33:13 AMSUjmzPRrZjSlytIE2KbU72JuN4U=6/17/2025 4:56:07 PM5/21/2025 11:33:13 AM</TimeStamp>
+        <TimeStamp>pS7n5wzOMLmk65vwzYKzvUq0Ljk=7/2/2025 2:49:50 PM6/18/2025 2:53:14 PMwxS9twBBZZ92hhoA8XJTBfP0DLA=7/2/2025 1:48:46 PM6/18/2025 2:53:14 PM</TimeStamp>
         <ID>
           <String>DWPBI</String>
         </ID>
@@ -90,7 +90,7 @@
     </ObjectSnapshots>
     <DatabaseSnapshot>
       <Type>Microsoft.AnalysisServices.Database</Type>
-      <TimeStamp>bazHI/VY2Z4OtkTYcpwL5IHfUF0=5/21/2025 11:09:18 AM5/21/2025 11:09:18 AM</TimeStamp>
+      <TimeStamp>bazHI/VY2Z4OtkTYcpwL5IHfUF0=5/21/2025 11:09:18 AM6/18/2025 2:53:14 PM</TimeStamp>
       <ID>
         <String>SSAS_DWPBI</String>
       </ID>
@@ -99,5 +99,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2025-06-18T05:45:25.323333Z</LastDeployed>
+  <LastDeployed>2025-07-02T07:49:58.27Z</LastDeployed>
 </DeploymentSnapshot>

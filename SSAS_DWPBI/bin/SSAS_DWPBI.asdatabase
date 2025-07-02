@@ -21,7 +21,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2507" scrolltop="-4948" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="14605" y="13414" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2507" scrolltop="-4948" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="14817" y="21140" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -1450,7 +1450,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5782" scrolltop="-3532" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="14605" y="13414" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5782" scrolltop="-3532" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10636" y="21087" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -1582,7 +1582,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3798" scrolltop="-12938" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="14605" y="13414" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3798" scrolltop="-12938" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="14605" y="21140" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -1681,11 +1681,17 @@
                   </Attributes>
                   <Position x="20" y="20" />
                 </Shape>
+                <Shape Id="Datekey" Expanded="false">
+                  <Attributes>
+                    <Attribute Id="Datekey" />
+                  </Attributes>
+                  <Position x="127" y="20" />
+                </Shape>
                 <Shape Id="Date Key" Expanded="false">
                   <Attributes>
                     <Attribute Id="Date Key" />
                   </Attributes>
-                  <Position x="127" y="20" />
+                  <Position x="127" y="68" />
                 </Shape>
               </Shapes>
             </DiagramLayout>
@@ -1713,7 +1719,6 @@
           <KeyColumns>
             <KeyColumn>
               <DataType>Date</DataType>
-              <NullProcessing>UnknownMember</NullProcessing>
               <Source xsi:type="ColumnBinding">
                 <TableID>dbo_DimDateTime</TableID>
                 <ColumnID>DateTimeKey</ColumnID>
@@ -1734,6 +1739,10 @@
               <RelationshipType>Rigid</RelationshipType>
               <Name>Date Key</Name>
             </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Time Slot</AttributeID>
+              <Name>Time Slot</Name>
+            </AttributeRelationship>
           </AttributeRelationships>
           <OrderBy>Key</OrderBy>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -1749,6 +1758,22 @@
               <Source xsi:type="ColumnBinding">
                 <TableID>dbo_DimDateTime</TableID>
                 <ColumnID>DateKey</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Time Slot</ID>
+          <Name>Time Slot</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>20</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimDateTime</TableID>
+                <ColumnID>TimeSlot</ColumnID>
               </Source>
             </KeyColumn>
           </KeyColumns>
@@ -1773,6 +1798,17 @@
             </Level>
           </Levels>
         </Hierarchy>
+        <Hierarchy>
+          <ID>Hierarchy 1</ID>
+          <Name>TimeSlot</Name>
+          <Levels>
+            <Level>
+              <ID>Time Slot</ID>
+              <Name>Time Slot</Name>
+              <SourceAttributeID>Time Slot</SourceAttributeID>
+            </Level>
+          </Levels>
+        </Hierarchy>
       </Hierarchies>
       <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
     </Dimension>
@@ -1788,7 +1824,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="40" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-19733" scrolltop="550" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="27040" y="21087" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="40" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-19733" scrolltop="8407" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="40323" y="21140" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -2132,7 +2168,7 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-          <Value>550</Value>
+          <Value>8407</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -2311,10 +2347,16 @@
             <Attribute>
               <AttributeID>Date Key</AttributeID>
             </Attribute>
+            <Attribute>
+              <AttributeID>Time Slot</AttributeID>
+            </Attribute>
           </Attributes>
           <Hierarchies>
             <Hierarchy>
               <HierarchyID>Hierarchy</HierarchyID>
+            </Hierarchy>
+            <Hierarchy>
+              <HierarchyID>Hierarchy 1</HierarchyID>
             </Hierarchy>
           </Hierarchies>
         </Dimension>
@@ -5037,6 +5079,112 @@ FORMAT_STRING = "Percent",
 VISIBLE = 1,
 DISPLAY_FOLDER = 'Revenue &amp; Profit';   
 
+
+-- returning player xdays
+CREATE MEMBER CURRENTCUBE.[Measures].[Returning Players 7d] AS
+	COUNT(
+		FILTER(
+			[Player].[PlayerID].[PlayerID].MEMBERS,
+			(
+				([Measures].[Active Players], [Date].[Date Hierarchy].CurrentMember) &gt; 0
+			)
+			AND
+			(
+				SUM(
+					LASTPERIODS(6, [Date].[Date Hierarchy].CurrentMember.PREVMEMBER),
+					([Measures].[Active Players], [Player].[PlayerID].CurrentMember)
+				) = 0
+			)
+		)
+	),
+FORMAT_STRING = "#,##0.00;(#,##0.00)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Player';
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Returning Players 14d] AS
+	COUNT(
+		FILTER(
+			[Player].[PlayerID].[PlayerID].MEMBERS,
+			(
+				([Measures].[Active Players], [Date].[Date Hierarchy].CurrentMember) &gt; 0
+			)
+			AND
+			(
+				SUM(
+					LASTPERIODS(13, [Date].[Date Hierarchy].CurrentMember.PREVMEMBER),
+					([Measures].[Active Players], [Player].[PlayerID].CurrentMember)
+				) = 0
+			)
+		)
+	),
+FORMAT_STRING = "#,##0.00;(#,##0.00)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Player';
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Returning Players 30d] AS
+	COUNT(
+		FILTER(
+			[Player].[PlayerID].[PlayerID].MEMBERS,
+			(
+				([Measures].[Active Players], [Date].[Date Hierarchy].CurrentMember) &gt; 0
+			)
+			AND
+			(
+				SUM(
+					LASTPERIODS(30, [Date].[Date Hierarchy].CurrentMember.PREVMEMBER),
+					([Measures].[Active Players], [Player].[PlayerID].CurrentMember)
+				) = 0
+			)
+		)
+	),
+FORMAT_STRING = "#,##0.00;(#,##0.00)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Player';
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Retention Rate %] AS
+    IIF(
+        COUNT(
+            NONEMPTY(
+                [Player].[PlayerID].[PlayerID],
+                ([Measures].[Active Players], [Date].[Date Hierarchy].CurrentMember.PREVMEMBER)
+            )
+        ) &gt; 0,
+
+        1.0 *
+        COUNT(
+            FILTER(
+                NONEMPTY(
+                    [Player].[PlayerID].[PlayerID],
+                    ([Measures].[Active Players], [Date].[Date Hierarchy].CurrentMember.PREVMEMBER)
+                ),
+                (
+                    ([Measures].[Active Players], [Date].[Date Hierarchy].CurrentMember,
+                     [Player].[PlayerID].CurrentMember) &gt; 0
+                )
+            )
+        )
+        /
+        COUNT(
+            NONEMPTY(
+                [Player].[PlayerID].[PlayerID],
+                ([Measures].[Active Players], [Date].[Date Hierarchy].CurrentMember.PREVMEMBER)
+            )
+        ) ,
+
+        NULL
+    ),
+FORMAT_STRING = "Percent", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Player';
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Churn Rate %] AS
+    IIF(
+        NOT ISEMPTY([Measures].[Retention Rate %]),
+        1 - [Measures].[Retention Rate %],
+        NULL
+    ),
+FORMAT_STRING = "Percent", 
+VISIBLE = 1,
+DISPLAY_FOLDER = 'Player';
+
+
 </Text>
             </Command>
           </Commands>
@@ -5105,7 +5253,7 @@ DISPLAY_FOLDER = 'Revenue &amp; Profit';
                 <Name>_ALL_TABLES_</Name>
                 <DiagramLayout>
                   <dds>
-                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="40" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-15990" scrolltop="19309" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="44159" y="14737" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="40" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-15990" scrolltop="19309" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="30877" y="22410" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                       <font>
                         <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                       </font>
@@ -5422,7 +5570,7 @@ DISPLAY_FOLDER = 'Revenue &amp; Profit';
                       </connector>
                     </ddscontrol>
                   </dds>
-</DiagramLayout>
+                </DiagramLayout>
                 <ShowRelationshipNames>False</ShowRelationshipNames>
                 <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
                 <DiagramViewPortLeft>-15990</DiagramViewPortLeft>
@@ -5929,30 +6077,17 @@ DISPLAY_FOLDER = 'Revenue &amp; Profit';
               <xs:selector xpath=".//dbo_DimGame" />
               <xs:field xpath="ProductId" />
             </xs:keyref>
-            <xs:keyref name="FK_DimPlayer_SystemId" refer="dbo_DimSystem_Constraint1">
-              <xs:selector xpath=".//dbo_DimPlayer1" />
-              <xs:field xpath="systemId" />
-            </xs:keyref>
             <xs:keyref name="FK_DimPlayer_DateKey" refer="Constraint1">
               <xs:selector xpath=".//dbo_DimPlayer1" />
               <xs:field xpath="DateKey" />
             </xs:keyref>
-            <xs:keyref name="FK_FactBet_SystemId" refer="dbo_DimSystem_Constraint1">
-              <xs:selector xpath=".//dbo_FactBet" />
-              <xs:field xpath="SystemId" />
+            <xs:keyref name="FK_DimPlayer_SystemId" refer="dbo_DimSystem_Constraint1">
+              <xs:selector xpath=".//dbo_DimPlayer1" />
+              <xs:field xpath="systemId" />
             </xs:keyref>
-            <xs:keyref name="FK_FactBet_ProductId" refer="dbo_DimProduct_Constraint1">
+            <xs:keyref name="FK_FactBet_DateTimeKey" refer="dbo_DimDateTime_Constraint1">
               <xs:selector xpath=".//dbo_FactBet" />
-              <xs:field xpath="ProductId" />
-            </xs:keyref>
-            <xs:keyref name="FK_FactBet_DimGame" refer="dbo_DimGame_Constraint1">
-              <xs:selector xpath=".//dbo_FactBet" />
-              <xs:field xpath="gameId" />
-              <xs:field xpath="ProductId" />
-            </xs:keyref>
-            <xs:keyref name="FK_FactBet_DateKey" refer="Constraint1">
-              <xs:selector xpath=".//dbo_FactBet" />
-              <xs:field xpath="Datekey" />
+              <xs:field xpath="DateTimeKey" />
             </xs:keyref>
             <xs:keyref name="FK_FactBet_DimPlayer" refer="dbo_DimPlayer1_Constraint1">
               <xs:selector xpath=".//dbo_FactBet" />
@@ -5960,9 +6095,22 @@ DISPLAY_FOLDER = 'Revenue &amp; Profit';
               <xs:field xpath="OperatorId" />
               <xs:field xpath="SystemId" />
             </xs:keyref>
-            <xs:keyref name="FK_FactBet_DateTimeKey" refer="dbo_DimDateTime_Constraint1">
+            <xs:keyref name="FK_FactBet_DateKey" refer="Constraint1">
               <xs:selector xpath=".//dbo_FactBet" />
-              <xs:field xpath="DateTimeKey" />
+              <xs:field xpath="Datekey" />
+            </xs:keyref>
+            <xs:keyref name="FK_FactBet_DimGame" refer="dbo_DimGame_Constraint1">
+              <xs:selector xpath=".//dbo_FactBet" />
+              <xs:field xpath="gameId" />
+              <xs:field xpath="ProductId" />
+            </xs:keyref>
+            <xs:keyref name="FK_FactBet_ProductId" refer="dbo_DimProduct_Constraint1">
+              <xs:selector xpath=".//dbo_FactBet" />
+              <xs:field xpath="ProductId" />
+            </xs:keyref>
+            <xs:keyref name="FK_FactBet_SystemId" refer="dbo_DimSystem_Constraint1">
+              <xs:selector xpath=".//dbo_FactBet" />
+              <xs:field xpath="SystemId" />
             </xs:keyref>
           </xs:element>
         </xs:schema>
