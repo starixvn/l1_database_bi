@@ -1,17 +1,17 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c626436f-3a20-4f89-b8e4-57aa422f759c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6e60d748-b9b7-4bbc-a840-1aeca0b857ff" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>DWPBI</ID>
   <MeasureGroups>
     <MeasureGroup>
       <ID>Fact Bet</ID>
       <Partitions>
-        <Partition dwd:design-time-name="81a63e5c-50c7-449c-9f13-23702f249032">
+        <Partition dwd:design-time-name="143996ba-28c8-44cf-a209-6637a65b8bc2">
           <ID>Fact Bet 2</ID>
           <Name>FactBet_202401</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="587b5fdf-f73b-48bc-81a8-929f89e6b3c1">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="073450a9-6f04-47ae-9ad0-6510c22d6c6c">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
   FROM [dbo].[FactBet]
@@ -23,14 +23,14 @@
           <EstimatedRows>5716434</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="8ac600ff-216e-4c87-86b5-ebb634d0e6df">
+        <Partition dwd:design-time-name="c0d17d3b-6ed0-4a09-9c51-0573f395a90d">
           <ID>Fact Bet</ID>
           <Name>FactBet_202402</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="88860b35-62d0-4f10-a294-b78265b69a13">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="8c50c7f2-630c-453c-8147-d3b34dbaa773">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
   FROM [dbo].[FactBet]
@@ -42,14 +42,14 @@
           <EstimatedRows>7263572</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="4971763a-b162-477e-b642-f6104502fd22">
+        <Partition dwd:design-time-name="ed3d6736-acf0-4a05-a4ab-3e684dc00612">
           <ID>Fact Bet 1</ID>
           <Name>FactBet_202403</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="4862bc7d-0035-40b2-9b10-5a7df041ceb7">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="75bf598d-03e8-4df5-88cf-41c6d5de7245">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
   FROM [dbo].[FactBet]
@@ -61,14 +61,14 @@
           <EstimatedRows>8091248</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="3a0144fe-ee49-49f3-ad45-d3a2280f0b67">
+        <Partition dwd:design-time-name="593a8dca-5409-43f2-8fae-bc0e1f18fa58">
           <ID>Fact Bet 3</ID>
           <Name>FactBet_202404</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="b251a5c0-e9d1-4a24-98c6-4c0a1e4ab78d">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="1bae529a-512e-48f2-9d3a-12780cdd00dd">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
   FROM [dbo].[FactBet]
@@ -80,14 +80,14 @@
           <EstimatedRows>7881460</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="881003ec-4adf-426c-b06b-c436e264edfa">
+        <Partition dwd:design-time-name="3addb830-1d31-4d9a-b2aa-13cfd5d6103c">
           <ID>Fact Bet 4</ID>
           <Name>FactBet_202405</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="75c7f1a2-f5b2-4158-86e1-85cf17cfeae4">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="6bbe6614-0d3a-4467-add1-e164ebc311a3">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
   FROM [dbo].[FactBet]
@@ -99,14 +99,14 @@
           <EstimatedRows>7389866</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="e0970738-1952-43fd-924f-9a8faaa51f5d">
+        <Partition dwd:design-time-name="dd169508-ace9-4c7a-b458-d0001ab39a5a">
           <ID>Fact Bet 5</ID>
           <Name>FactBet_202406</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="16da8ec5-b24c-49df-a76e-d05141b942ef">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="34ab6e25-77e2-4f08-bee7-657506067bfd">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
   FROM [dbo].[FactBet]
@@ -118,14 +118,14 @@
           <EstimatedRows>11573500</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="17e0cc75-13a8-483a-a01d-9b9b41d37dd8">
+        <Partition dwd:design-time-name="cd63b041-a53c-4ff2-b9a7-3f324ccf8e01">
           <ID>Fact Bet 6</ID>
           <Name>FactBet_202407</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="a4306e5a-1923-4c24-bac5-218f008e06ba">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="dc3c6acb-dcba-4d7f-9b50-5c7178d42060">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
   FROM [dbo].[FactBet]
@@ -137,14 +137,14 @@
           <EstimatedRows>12725884</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="7bdeebdc-9453-4bcf-81e4-69b833f53ea8">
+        <Partition dwd:design-time-name="9fa32e3a-fb1d-48da-9635-086e359b71ce">
           <ID>Fact Bet 7</ID>
           <Name>FactBet_202408</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="05daf718-a41d-4f77-971e-6e5d2dabff03">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="a5098846-0ee5-442c-9b7d-65d0afd97043">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
   FROM [dbo].[FactBet]
@@ -156,14 +156,14 @@
           <EstimatedRows>8405370</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="2adfc8e4-436c-4d2e-a037-0f91cb7bb91a">
+        <Partition dwd:design-time-name="5cf42ad3-cb6a-47c6-be47-cf01066e25ee">
           <ID>Fact Bet 8</ID>
           <Name>FactBet_202409</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="a7e1d7fb-fa7d-433b-8113-88560bc69181">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="baa07701-b17d-49c9-b0d6-0f4feb5b5171">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
   FROM [dbo].[FactBet]
@@ -175,14 +175,14 @@
           <EstimatedRows>7601956</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="07d57021-8da0-49ad-a27c-232711183589">
+        <Partition dwd:design-time-name="001dc653-dd3e-49f9-a2c4-c24508f014b3">
           <ID>Fact Bet 9</ID>
           <Name>FactBet_202410</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="37c86e4b-80c4-445b-8ad8-32dbbdf0e700">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="3d2e6687-7f02-48b1-ab50-c4279e21e6c8">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
   FROM [dbo].[FactBet]
@@ -194,14 +194,14 @@
           <EstimatedRows>7123580</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="37255701-5a93-46f7-8e8f-8f6021479d2c">
+        <Partition dwd:design-time-name="108b9093-695d-4963-a0b2-489bea337be0">
           <ID>Fact Bet 10</ID>
           <Name>FactBet_202411</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="5d459c6d-1d12-40a1-bcfc-a88ab4dc2b71">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="3ccea7f2-e93e-416e-ad04-b4517e256d56">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
   FROM [dbo].[FactBet]
@@ -213,14 +213,14 @@
           <EstimatedRows>6535808</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="951fc0dc-47bc-4c51-8ba2-737cbbab4854">
+        <Partition dwd:design-time-name="7c51bbd1-2b99-4b7c-a85f-7e564ff22543">
           <ID>Fact Bet 11</ID>
           <Name>FactBet_202412</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="0b1e2c6e-616e-4459-88f9-96158d9afeea">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="dca97361-725f-4c5e-b9cb-c69ece582763">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
   FROM [dbo].[FactBet]
@@ -232,14 +232,14 @@
           <EstimatedRows>6488610</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="14e4622f-6314-4255-8ab4-d73bd2bd5c51">
+        <Partition dwd:design-time-name="3f0a7c39-d8ac-4175-b5a4-4169998772ee">
           <ID>Fact Bet 12</ID>
           <Name>FactBet_202501</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="0737fcec-8253-4bf9-b2d5-a237b1e30da6">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="5e89a94b-0744-45b0-87da-08f78007eeaf">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
   FROM [dbo].[FactBet]
@@ -251,14 +251,14 @@
           <EstimatedRows>5803464</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="790bb1cf-2a0a-4c77-b288-cd53a4dd8f02">
+        <Partition dwd:design-time-name="e49fd103-fe51-4c1a-b9d2-3ff496e60ed0">
           <ID>Fact Bet 13</ID>
           <Name>FactBet_202502</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="b6887e8f-ce41-45ef-9bf6-0d675d73e4fa">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="b69653a5-695e-42bb-a5ee-167a09877f0e">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
   FROM [dbo].[FactBet]
@@ -270,14 +270,14 @@
           <EstimatedRows>5868512</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="30940414-2373-4c28-8fca-4e4632032920">
+        <Partition dwd:design-time-name="7189fdee-cc68-4255-8ae8-439651aa40a3">
           <ID>Fact Bet 1 1</ID>
           <Name>FactBet_202503</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="839fe6ff-1f2a-457a-b705-8f25791c16fe">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="5196b249-410a-423d-806e-7d80eddc1310">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
   FROM [dbo].[FactBet]
@@ -289,14 +289,14 @@
           <EstimatedRows>7497182</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="e7e6cc2e-6d35-492d-b808-68e2e548fec5">
+        <Partition dwd:design-time-name="fff5eafa-6a7e-4641-a199-c12088c241f3">
           <ID>Fact Bet 2 1</ID>
           <Name>FactBet_202504</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="c27a506d-d756-4e5d-ae13-f2c2756ac5d6">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="a8000f0b-41b8-49d0-b754-f49b53d3c61c">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
   FROM [dbo].[FactBet]
@@ -308,14 +308,14 @@
           <EstimatedRows>6673528</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="c07965bb-91b0-4006-8ceb-3fe17344fb6d">
+        <Partition dwd:design-time-name="53eb2749-378f-4bc9-8260-7a4b71715875">
           <ID>Fact Bet 14</ID>
           <Name>FactBet_202505</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="5496a171-f8f9-4cf0-9114-405f30509400">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="91110e87-8030-4940-9741-9d296531ef1e">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
   FROM [dbo].[FactBet]
@@ -327,14 +327,14 @@
           <EstimatedRows>37702</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="17b11e5c-0e0f-4b25-b109-3d02c9b55d8f">
+        <Partition dwd:design-time-name="8c84e106-e3f5-43ca-90c1-0dd332bdce72">
           <ID>Fact Bet 1 2</ID>
           <Name>FactBet_202506</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="40e51559-bca7-4212-8a93-94f4c8efa7b8">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="6f195669-e7fe-4a8e-8145-9a5f9a57a6fe">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
   FROM [dbo].[FactBet]
@@ -345,14 +345,14 @@
           <ProcessingMode>Regular</ProcessingMode>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="94028e0c-fb56-453f-bdac-3a9414d3648d">
+        <Partition dwd:design-time-name="711a41e6-5771-49f5-8dbd-4c9ce8b1edac">
           <ID>Fact Bet 2 2</ID>
           <Name>FactBet_202507</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="07aaead4-fa6d-4b1f-9cd0-3845aee62f24">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="8468bb65-db44-4a8e-9549-6c7ab7acdc46">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
   FROM [dbo].[FactBet]
@@ -363,14 +363,14 @@
           <ProcessingMode>Regular</ProcessingMode>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="f010e794-3028-496d-8224-d0ca6f3da33e">
+        <Partition dwd:design-time-name="195a93c9-6a04-4d17-ac9c-228a7f399fd2">
           <ID>Fact Bet 15</ID>
           <Name>FactBet_202508_12</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="716bb53d-cea5-4c2e-90da-0129e482eb89">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="c71dbf55-3aa9-4bd4-90d3-cd9fea4e6a97">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId], [dbo].[FactBet].[DateTimeKey]
   FROM [dbo].[FactBet]
@@ -528,14 +528,14 @@
     <MeasureGroup>
       <ID>Fact Bet 1</ID>
       <Partitions>
-        <Partition dwd:design-time-name="ad0844e5-bc72-428c-905a-8c312a54ca47">
+        <Partition dwd:design-time-name="8f53c472-7982-4874-bed8-5c1807c54473">
           <ID>Fact Bet 2</ID>
           <Name>FactBet_202401</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="a4accddf-e69b-4674-af4f-f2228b72ba2a">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="ca34a0ee-cad8-46bc-91f9-37f28554d7a5">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
   FROM [dbo].[FactBet]
@@ -547,14 +547,14 @@
           <EstimatedRows>5716434</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="b1ab13af-8fb5-4f9e-9645-6a0bfd75fe31">
+        <Partition dwd:design-time-name="8f42fb9c-132c-462b-98ce-912edfb9b25e">
           <ID>Fact Bet</ID>
           <Name>FactBet_202402</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="4e157554-2f0a-41d4-a360-54f7550ee3a3">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="f50bdc11-a5a6-4b40-ab97-985e7fd7792b">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
   FROM [dbo].[FactBet]
@@ -566,14 +566,14 @@
           <EstimatedRows>7263572</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="9d4dc583-bdf9-4b88-8176-af74c9413da7">
+        <Partition dwd:design-time-name="f99dac58-dd33-4390-9435-1718fd93c538">
           <ID>Fact Bet 1</ID>
           <Name>FactBet_202403</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="529c46b1-867b-4a09-af9b-5fa8fee0f857">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="d6bff030-794a-4ee9-81d3-df2d790f21b2">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
   FROM [dbo].[FactBet]
@@ -585,14 +585,14 @@
           <EstimatedRows>8091248</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="64097e6a-6aea-4c25-9de1-4473ebb46ea8">
+        <Partition dwd:design-time-name="60d71f0c-48fc-41a7-8048-548ee59a8eff">
           <ID>Fact Bet 3</ID>
           <Name>FactBet_202404</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="039aa374-e162-48b6-9326-49d8d6759c93">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="0b2dff2d-2dea-45f6-aa1a-fa6b1561abf3">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
   FROM [dbo].[FactBet]
@@ -604,14 +604,14 @@
           <EstimatedRows>7881460</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="226bfabd-991a-4dfc-916a-22c0b24954d1">
+        <Partition dwd:design-time-name="909adc3b-0bb4-4fad-b4d2-629b151f232a">
           <ID>Fact Bet 4</ID>
           <Name>FactBet_202405</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="9d1ade52-bef0-4295-9390-86c018f962a9">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="641dc9af-a7f5-4250-bf88-ca8732016cad">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
   FROM [dbo].[FactBet]
@@ -623,14 +623,14 @@
           <EstimatedRows>7389866</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="20ae1f3f-bf94-4a45-8210-cd52ec2b41e0">
+        <Partition dwd:design-time-name="4cbbb685-21ab-402a-a6a5-0ef3b94af961">
           <ID>Fact Bet 5</ID>
           <Name>FactBet_202406</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="521b39a8-7072-4b90-865c-aa7c3d496e75">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="90caada6-c91a-45b1-a594-f5b3f069dc01">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
   FROM [dbo].[FactBet]
@@ -642,14 +642,14 @@
           <EstimatedRows>11573500</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="ccff413c-dda5-4261-af54-d398473e20c0">
+        <Partition dwd:design-time-name="d344763a-54b2-4e8d-9e10-65da232ab201">
           <ID>Fact Bet 6</ID>
           <Name>FactBet_202407</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="424795c8-8eab-4cc1-bd73-1cac59a9042c">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="6544e641-2b3e-40d3-9f7f-1f91884a79d5">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
   FROM [dbo].[FactBet]
@@ -661,14 +661,14 @@
           <EstimatedRows>12725884</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="3aa72c5c-d87c-4df9-b92c-3f855fa33708">
+        <Partition dwd:design-time-name="a364afde-b89a-40d4-a070-8aed1ed34a7e">
           <ID>Fact Bet 7</ID>
           <Name>FactBet_202408</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="740a1c9d-2948-45d7-9266-853cdd4b89a7">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="bb95815b-aa0b-4b65-831d-80b499ce8282">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
   FROM [dbo].[FactBet]
@@ -680,14 +680,14 @@
           <EstimatedRows>8405370</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="6a496bbd-67ce-4424-ab62-473207eb92c1">
+        <Partition dwd:design-time-name="c5d12458-c116-468d-8285-ea93caffe344">
           <ID>Fact Bet 8</ID>
           <Name>FactBet_202409</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="eb608475-b594-43fe-bd51-de1563de2a98">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="32068201-b93c-4d69-8e0a-a3ce781cde1e">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
   FROM [dbo].[FactBet]
@@ -699,14 +699,14 @@
           <EstimatedRows>7601956</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="f953d501-87a5-45c2-8e98-62469bc789fe">
+        <Partition dwd:design-time-name="27ffa9a8-c5ab-42cd-8639-eff7952fde88">
           <ID>Fact Bet 9</ID>
           <Name>FactBet_202410</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="c9a7718b-dd69-4446-9ed1-b8627cdbc21a">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="6997f808-c23c-4985-bc07-efbc49fc5f82">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
   FROM [dbo].[FactBet]
@@ -718,14 +718,14 @@
           <EstimatedRows>7123580</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="c1c8f89d-dd47-4248-880c-2f5121256266">
+        <Partition dwd:design-time-name="b726e0b0-5e25-478a-94bb-d9433129edf0">
           <ID>Fact Bet 10</ID>
           <Name>FactBet_202411</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="6a07ea7e-6d8e-4427-b44b-fad5cb9d0acc">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="d5303eb8-305b-432f-a18c-67ab216449b8">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
   FROM [dbo].[FactBet]
@@ -737,14 +737,14 @@
           <EstimatedRows>6535808</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="36efbfe6-69d1-4531-a983-0433170a8be5">
+        <Partition dwd:design-time-name="270addc7-d6cb-43c1-af52-99e0d963d9e6">
           <ID>Fact Bet 11</ID>
           <Name>FactBet_202412</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="4a4e3b2d-3d1d-40b8-b494-7e481b648aa2">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="31590611-4304-45d2-8883-453b65d55de7">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
   FROM [dbo].[FactBet]
@@ -756,14 +756,14 @@
           <EstimatedRows>6488610</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="ef6b2016-eafd-445c-963b-4bce301e82c2">
+        <Partition dwd:design-time-name="8be3e4f1-b3b4-4bd1-8e2e-42dcf9c0b711">
           <ID>Fact Bet 12</ID>
           <Name>FactBet_202501</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="e60d78d8-8249-4b66-8bb3-42a6497b9624">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="9032514e-573c-40ff-8cfd-92deb555369b">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
   FROM [dbo].[FactBet]
@@ -775,14 +775,14 @@
           <EstimatedRows>5803464</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="19b44f00-6937-49c4-bca5-3c3e4142a500">
+        <Partition dwd:design-time-name="dda968e1-ac55-448e-ae8d-5ec0bd15174a">
           <ID>Fact Bet 13</ID>
           <Name>FactBet_202502</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="05c26a63-3bda-4e20-9063-6568c48cf328">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="4fc734e1-f7ed-4e15-9ed1-ad56d37486f4">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
   FROM [dbo].[FactBet]
@@ -794,14 +794,14 @@
           <EstimatedRows>5868512</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="80a5128b-e022-4778-bb27-9a51e7ac73b2">
+        <Partition dwd:design-time-name="c46719ac-7ded-462f-ae27-fdfa598434b8">
           <ID>Fact Bet 1 1</ID>
           <Name>FactBet_202503</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="ceb3344a-3c91-4566-8a41-867ac2af19f0">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="96bc60d4-866f-46f3-9886-53e143d79729">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
   FROM [dbo].[FactBet]
@@ -813,14 +813,14 @@
           <EstimatedRows>7497182</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="e8adc908-0b4f-4b0e-9481-6b11d46f7045">
+        <Partition dwd:design-time-name="f8e8cb35-9b17-4a44-9eca-2f168dd6e7a3">
           <ID>Fact Bet 2 1</ID>
           <Name>FactBet_202504</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="a212d269-5878-4215-b124-f58272877f37">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="c3915098-682d-47d1-b76d-8d4c8d6ed8d8">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
   FROM [dbo].[FactBet]
@@ -832,14 +832,14 @@
           <EstimatedRows>6673528</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="7a9d685c-b740-422e-a3e7-694b9c51a5c8">
+        <Partition dwd:design-time-name="8dff3d86-e716-48a3-9c2a-8e0ad3695bea">
           <ID>Fact Bet 14</ID>
           <Name>FactBet_202505</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="629b8525-c7cf-4d0f-833f-7d7a19c4cd21">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="802e1d80-4120-4bd0-8255-8bb3e984c50c">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
   FROM [dbo].[FactBet]
@@ -851,14 +851,14 @@
           <EstimatedRows>37702</EstimatedRows>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="1fb28146-7c59-45ff-b327-1a50b56cdb9b">
+        <Partition dwd:design-time-name="9a83d61c-6f58-4aef-b470-caef317c073b">
           <ID>Fact Bet 1 2</ID>
           <Name>FactBet_202506</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="cf8cb03d-8a7b-423e-8f7c-ade8a943126c">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="8baa208b-4f87-43c8-a7e4-0118529b8bc9">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
   FROM [dbo].[FactBet]
@@ -869,14 +869,14 @@
           <ProcessingMode>Regular</ProcessingMode>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="9ae379ae-ccba-47aa-b142-068afc2a92fa">
+        <Partition dwd:design-time-name="62c83eda-fa87-47bc-a857-e4379def66ed">
           <ID>Fact Bet 2 2</ID>
           <Name>FactBet_202507</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="73d32913-b1ed-416a-b35b-57a4810d8f77">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="9e1bff00-c70f-4af7-8a37-9f760fc3f22e">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
   FROM [dbo].[FactBet]
@@ -887,14 +887,14 @@
           <ProcessingMode>Regular</ProcessingMode>
           <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
-        <Partition dwd:design-time-name="467b4005-c423-45c9-9199-558283594cfa">
+        <Partition dwd:design-time-name="8c1e3f40-ab3e-447b-9d72-f7cf44cb04ea">
           <ID>Fact Bet 15</ID>
           <Name>FactBet_202508_12</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="QueryBinding" dwd:design-time-name="3c0a2e23-4f4e-4bdd-aa14-a495b14c208b">
+          <Source xsi:type="QueryBinding" dwd:design-time-name="f89ce939-e58a-4f79-8bce-beaad19dd4ba">
             <DataSourceID>DWPBI</DataSourceID>
             <QueryDefinition>SELECT [dbo].[FactBet].[betid],[dbo].[FactBet].[_id],[dbo].[FactBet].[stake],[dbo].[FactBet].[payout],[dbo].[FactBet].[refund],[dbo].[FactBet].[winloss],[dbo].[FactBet].[win],[dbo].[FactBet].[loss],[dbo].[FactBet].[code],[dbo].[FactBet].[currency],[dbo].[FactBet].[gameId],[dbo].[FactBet].[isTest],[dbo].[FactBet].[playerId],[dbo].[FactBet].[roundId],[dbo].[FactBet].[siteName],[dbo].[FactBet].[subRoundId],[dbo].[FactBet].[tickets],[dbo].[FactBet].[roundTime],[dbo].[FactBet].[time],[dbo].[FactBet].[USD_stake],[dbo].[FactBet].[USD_payout],[dbo].[FactBet].[USD_refund],[dbo].[FactBet].[USD_winloss],[dbo].[FactBet].[USD_win],[dbo].[FactBet].[USD_loss],[dbo].[FactBet].[VND_stake],[dbo].[FactBet].[VND_payout],[dbo].[FactBet].[VND_refund],[dbo].[FactBet].[VND_winloss],[dbo].[FactBet].[VND_win],[dbo].[FactBet].[VND_loss],[dbo].[FactBet].[Datekey],[dbo].[FactBet].[SiteId],[dbo].[FactBet].[ProductId], [dbo].[FactBet].[OperatorId], [dbo].[FactBet].[SystemId]
   FROM [dbo].[FactBet]
@@ -1052,14 +1052,14 @@
     <MeasureGroup>
       <ID>Player</ID>
       <Partitions>
-        <Partition dwd:design-time-name="26099d48-2813-47b0-b5db-2bc0fe42f1b9">
+        <Partition dwd:design-time-name="81e128ed-7da9-4630-9256-7686a26346e5">
           <ID>Player</ID>
           <Name>Player 1</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8da5ad16-c79f-4de2-818d-a3e2ef982795">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="50c8157a-8621-4827-b198-fa0f46ab7d87">
             <DataSourceViewID>DWPBI</DataSourceViewID>
             <TableID>dbo_DimPlayer1</TableID>
           </Source>

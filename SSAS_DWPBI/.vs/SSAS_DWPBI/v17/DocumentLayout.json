@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{C8761C08-3473-D097-E0A3-7B10A7132D82}|SSAS_DWPBI.dwproj|solutionrelative:DWPBI.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C8761C08-3473-D097-E0A3-7B10A7132D82}|SSAS_DWPBI.dwproj|D:\\Working\\GIT\\bi\\SSAS_DWPBI\\DWPBI.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{C8761C08-3473-D097-E0A3-7B10A7132D82}|SSAS_DWPBI.dwproj|solutionrelative:DWPBI.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C8761C08-3473-D097-E0A3-7B10A7132D82}|SSAS_DWPBI.dwproj|D:\\Working\\GIT\\bi\\SSAS_DWPBI\\Time.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
       "RelativeMoniker": "D:0:0:{C8761C08-3473-D097-E0A3-7B10A7132D82}|SSAS_DWPBI.dwproj|solutionrelative:Time.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C8761C08-3473-D097-E0A3-7B10A7132D82}|SSAS_DWPBI.dwproj|D:\\Working\\GIT\\bi\\SSAS_DWPBI\\MetricSelector.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
       "RelativeMoniker": "D:0:0:{C8761C08-3473-D097-E0A3-7B10A7132D82}|SSAS_DWPBI.dwproj|solutionrelative:MetricSelector.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8761C08-3473-D097-E0A3-7B10A7132D82}|SSAS_DWPBI.dwproj|D:\\Working\\GIT\\bi\\SSAS_DWPBI\\DWPBI.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
-      "RelativeMoniker": "D:0:0:{C8761C08-3473-D097-E0A3-7B10A7132D82}|SSAS_DWPBI.dwproj|solutionrelative:DWPBI.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +46,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MetricSelector.dim [Design]",
               "DocumentMoniker": "D:\\Working\\GIT\\bi\\SSAS_DWPBI\\MetricSelector.dim",
               "RelativeDocumentMoniker": "MetricSelector.dim",
@@ -57,7 +57,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Date.dim [Design]",
               "DocumentMoniker": "D:\\Working\\GIT\\bi\\SSAS_DWPBI\\Date.dim",
               "RelativeDocumentMoniker": "Date.dim",
@@ -68,26 +68,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "DWPBI.dsv [Design]",
               "DocumentMoniker": "D:\\Working\\GIT\\bi\\SSAS_DWPBI\\DWPBI.dsv",
               "RelativeDocumentMoniker": "DWPBI.dsv",
-              "ToolTip": "D:\\Working\\PowerBI\\SSAS_DWPBI\\DWPBI.dsv [Design]",
-              "RelativeToolTip": "..\\..\\..\\PowerBI\\SSAS_DWPBI\\DWPBI.dsv [Design]",
+              "ToolTip": "D:\\Working\\GIT\\bi\\SSAS_DWPBI\\DWPBI.dsv [Design]",
+              "RelativeToolTip": "DWPBI.dsv [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-06-18T02:51:20.957Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Time.dim [Design]",
               "DocumentMoniker": "D:\\Working\\GIT\\bi\\SSAS_DWPBI\\Time.dim",
               "RelativeDocumentMoniker": "Time.dim",
               "ToolTip": "D:\\Working\\GIT\\bi\\SSAS_DWPBI\\Time.dim [Design]",
               "RelativeToolTip": "Time.dim [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-06-18T02:46:19.094Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-18T02:46:19.094Z"
             }
           ]
         },

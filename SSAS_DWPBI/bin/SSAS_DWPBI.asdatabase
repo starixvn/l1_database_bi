@@ -1582,7 +1582,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3798" scrolltop="-12938" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="14605" y="21140" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3798" scrolltop="-12938" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="14817" y="21140" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -1824,7 +1824,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="40" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-19733" scrolltop="8407" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="40323" y="21140" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="40" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-19733" scrolltop="-1775" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="40323" y="21140" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -2168,7 +2168,7 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-          <Value>8407</Value>
+          <Value>-1775</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -3112,6 +3112,40 @@
                 <Source xsi:type="ColumnBinding">
                   <TableID>dbo_FactBet</TableID>
                   <ColumnID>IsRealBet</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Is Real Refund Bet</ID>
+              <Name>Real Refund Bet</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_FactBet</TableID>
+                  <ColumnID>IsRealRefundBet</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Maximum USD Stake</ID>
+              <Name>Maximum USD Stake</Name>
+              <AggregateFunction>Max</AggregateFunction>
+              <Source>
+                <DataType>Double</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_FactBet</TableID>
+                  <ColumnID>USD_stake</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Is Bet Win</ID>
+              <Name>Bet Win</Name>
+              <Source>
+                <DataType>Integer</DataType>
+                <Source xsi:type="ColumnBinding">
+                  <TableID>dbo_FactBet</TableID>
+                  <ColumnID>IsBetWin</ColumnID>
                 </Source>
               </Source>
             </Measure>
@@ -4590,22 +4624,64 @@
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <Commands>
             <Command>
-              <Text>CALCULATE;               
+              <Text>CALCULATE;                
                       
 CREATE MEMBER CURRENTCUBE.[Measures].[USD Valid Stake]
  AS [Measures].[USD Stake] - [Measures].[USD Refund], 
 FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Calculated Measures';                               
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Calculated Measures';                                
+
 CREATE MEMBER CURRENTCUBE.[Measures].[USD Valid Payout]
  AS [Measures].[USD Payout] - [Measures].[USD Refund], 
 FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Calculated Measures';                                      
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Calculated Measures';                                       
+
+CREATE MEMBER CURRENTCUBE.[Measures].[USD Max Stake]
+ AS [Measures].[Maximum USD Stake], 
+FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Calculated Measures';                                       
+
+CREATE MEMBER CURRENTCUBE.[Measures].[USD Refund Stake]
+ AS [Measures].[USD Refund], 
+FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Calculated Measures';  
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Bets Refund Sum]
+ AS [Measures].[Real Refund Bet], 
+FORMAT_STRING = "#,##0;(#,##0)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';  
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Bets Real Sum]
  AS [Measures].[RealTicket], 
 FORMAT_STRING = "#,##0;(#,##0)", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';     
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';      
 
+CREATE MEMBER CURRENTCUBE.[Measures].[Bets Win Sum]
+ AS [Measures].[Bet Win], 
+FORMAT_STRING = "#,##0;(#,##0)", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';      
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Bets Sum Contri % by Game]
+ AS 
+   IIF(
+    ([Measures].[Bets Sum], [Game].[Game].DefaultMember) = 0,
+    NULL,
+    [Measures].[Bets Sum]/ ([Measures].[Bets Sum], [Game].[Game].DefaultMember)
+   ),
+VISIBLE = 1,
+FORMAT_STRING = "Percent",
+DISPLAY_FOLDER = 'Revenue &amp; Profit'; 
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Average Stake per Bet]
+AS
+  IIF(
+    [Measures].[Ticket Count] = 0,
+    NULL,
+    [Measures].[USD Stake] / [Measures].[Ticket Count]
+  ),
+VISIBLE = 1,
+FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
+DISPLAY_FOLDER = 'Betting'; 
 
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Bets Real Sum Prev Month]
@@ -4615,7 +4691,7 @@ CREATE MEMBER CURRENTCUBE.[Measures].[Bets Real Sum Prev Month]
         ),
         [Measures].[Bets Real Sum]), 
 FORMAT_STRING = "#,##0.00;(#,##0.00)", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';                
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';                 
                   
 CREATE MEMBER CURRENTCUBE.[Measures].[Bets Real Sum Var%] 
 AS
@@ -4626,7 +4702,7 @@ AS
         / [Measures].[Bets Real Sum Prev Month]
     ),
 FORMAT_STRING = "Percent",
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';               
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';                
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Bets Real Sum Delta]
  AS IIF(
@@ -4635,24 +4711,48 @@ CREATE MEMBER CURRENTCUBE.[Measures].[Bets Real Sum Delta]
         ([Measures].[Bets Real Sum] - [Measures].[Bets Real Sum Prev Month])
     ), 
 FORMAT_STRING = "#,##0.00;(#,##0.00)", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';    
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';     
+
 
 
 
 CREATE MEMBER CURRENTCUBE.[Measures].[MoM text]
  AS "MoM%", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Text';               
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Text';                
 
 CREATE MEMBER CURRENTCUBE.[Measures].[MoM Change]
  AS "MoM Change", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Text';                  
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Text';                   
 
+CREATE MEMBER CURRENTCUBE.[Measures].[YoY text]
+ AS "YoY%", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Text';    
+
+CREATE MEMBER CURRENTCUBE.[Measures].[YoY Change]
+ AS "YoY Change", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Text';                   
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Text]
+ AS "Text", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Text';        
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Win Amount Text]
+ AS "Win Amount", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Text';                   
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Win Rate Text]
+ AS "Win Rate", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Text';     
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Win Rate by Amount Text]
+ AS "Win Rate by Amount", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Text';           
 
 // GGR
 CREATE MEMBER CURRENTCUBE.[Measures].[GGR]
  AS [Measures].[USD Valid Stake] - [Measures].[USD Win], 
 FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';      
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';       
 
 
 CREATE MEMBER CURRENTCUBE.[Measures].[GGR Prev Month]
@@ -4662,7 +4762,7 @@ CREATE MEMBER CURRENTCUBE.[Measures].[GGR Prev Month]
         ),
         [Measures].[GGR]), 
 FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';                  
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';                   
 
 CREATE MEMBER CURRENTCUBE.[Measures].[GGR All Game Category]
  AS  SUM(
@@ -4670,7 +4770,7 @@ CREATE MEMBER CURRENTCUBE.[Measures].[GGR All Game Category]
         ([Measures].[GGR])
     ), 
 FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';                    
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';                     
    
 CREATE MEMBER CURRENTCUBE.[Measures].[GGR All Game Category Pre Month]
  AS (ParallelPeriod(
@@ -4679,7 +4779,7 @@ CREATE MEMBER CURRENTCUBE.[Measures].[GGR All Game Category Pre Month]
         ),
         [Measures].[GGR All Game Category]),  
 FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';          
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';           
 
 
 CREATE MEMBER CURRENTCUBE.[Measures].[GGR All Game Category Delta] 
@@ -4688,7 +4788,7 @@ CREATE MEMBER CURRENTCUBE.[Measures].[GGR All Game Category Delta]
         ([Measures].[GGR Delta])
     ), 
 FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';                  
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';                   
 
 CREATE MEMBER CURRENTCUBE.[Measures].[GGR All Game Category Var%] 
 AS
@@ -4699,7 +4799,42 @@ AS
         / [Measures].[GGR All Game Category Pre Month]
     ),
 FORMAT_STRING = "Percent",
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';      
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';       
+
+CREATE MEMBER CURRENTCUBE.[Measures].[GGR Prev Year]
+AS 
+    ([Measures].[GGR], 
+     ParallelPeriod(
+        [Date].[Year].[Year], 
+        1, 
+        [Date].[Year].CurrentMember)
+    ),
+FORMAT_STRING = "$#,##0.00;($#,##0.00)",
+VISIBLE = 1,
+DISPLAY_FOLDER = 'Revenue &amp; Profit'; 
+       
+CREATE MEMBER CURRENTCUBE.[Measures].[GGR YoY Var%]
+AS 
+    IIF(
+        IsEmpty([Measures].[GGR Prev Year]) OR [Measures].[GGR Prev Year] = 0,
+        NULL,
+        ([Measures].[GGR] - [Measures].[GGR Prev Year])
+        / [Measures].[GGR Prev Year]
+    ),
+FORMAT_STRING = "Percent",
+VISIBLE = 1,
+DISPLAY_FOLDER = 'Revenue &amp; Profit'; 
+  
+CREATE MEMBER CURRENTCUBE.[Measures].[GGR YoY Delta]
+AS 
+    IIF(
+        IsEmpty([Measures].[GGR Prev Year]) OR [Measures].[GGR Prev Year] = 0,
+        NULL,
+        ([Measures].[GGR] - [Measures].[GGR Prev Year])
+    ),
+FORMAT_STRING = "$#,##0.00;($#,##0.00)",
+VISIBLE = 1,
+DISPLAY_FOLDER = 'Revenue &amp; Profit'; 
 
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Selected Metric] AS 
@@ -4730,35 +4865,8 @@ IIF(
 ),
 VISIBLE = 1, 
 DISPLAY_FOLDER = 'Dynamic Metrics',
-FORMAT_STRING = "#,##0.00";  
+FORMAT_STRING = "#,##0.00";   
 
-/*
-CREATE MEMBER CURRENTCUBE.[Measures].[Selected Metric] AS 
-IIF(
-    [MetricSelector].[Metric Name].CURRENTMEMBER IS [MetricSelector].[Metric Name].&amp;[Turnover],
-    [Measures].[Turnover],
-    IIF(
-        [MetricSelector].[Metric Name].CURRENTMEMBER IS [MetricSelector].[Metric Name].&amp;[GGR],
-        [Measures].[GGR],
-        IIF(
-            [MetricSelector].[Metric Name].CURRENTMEMBER IS [MetricSelector].[Metric Name].&amp;[Win Sum],
-            [Measures].[Win Sum],
-            IIF(
-                [MetricSelector].[Metric Name].CURRENTMEMBER IS [MetricSelector].[Metric Name].&amp;[Bets Sum],
-                [Measures].[Bets Sum],
-                IIF(
-                    [MetricSelector].[Metric Name].CURRENTMEMBER IS [MetricSelector].[Metric Name].&amp;[Active Players],
-                    [Measures].[Active Players],
-                    NULL
-                )
-            )
-        )
-    )
-),
-VISIBLE = 1, 
-DISPLAY_FOLDER = 'Dynamic Metrics',
-FORMAT_STRING = "#,##0.00";  
-*/
 
 CREATE MEMBER CURRENTCUBE.[Measures].[GGR Var%] 
 AS
@@ -4769,7 +4877,7 @@ AS
         / [Measures].[GGR Prev Month]
     ),
 FORMAT_STRING = "Percent",
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';               
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';                
 
 
 CREATE MEMBER CURRENTCUBE.[Measures].[GGR Delta] 
@@ -4780,7 +4888,7 @@ AS
         ([Measures].[GGR] - [Measures].[GGR Prev Month])
     ),
 FORMAT_STRING = "$#,##0.00;($#,##0.00)",
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';     
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';      
 
 
 CREATE MEMBER CURRENTCUBE.[Measures].[GGR Contri %]
@@ -4790,14 +4898,37 @@ CREATE MEMBER CURRENTCUBE.[Measures].[GGR Contri %]
         ([Measures].[GGR Delta] / [Measures].[GGR All Game Category Delta]) 
     ), 
 FORMAT_STRING = "Percent", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';                  
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';                   
+
+CREATE MEMBER CURRENTCUBE.[Measures].[GGR Contri % by Game]
+ AS 
+   IIF(
+    ([Measures].[GGR], [Game].[Game].DefaultMember) = 0,
+    NULL,
+    [Measures].[GGR]/ ([Measures].[GGR], [Game].[Game].DefaultMember)
+   ),
+VISIBLE = 1,
+FORMAT_STRING = "Percent",
+DISPLAY_FOLDER = 'Revenue &amp; Profit'; 
+
+-- Average Revenue Per User
+CREATE MEMBER CURRENTCUBE.[Measures].[ARPU]
+ AS 
+  IIF(
+    [Measures].[Active Players] = 0,
+    NULL,
+    [Measures].[GGR] / [Measures].[Active Players]
+  ),
+VISIBLE = 1,
+FORMAT_STRING = "Currency",
+DISPLAY_FOLDER = 'Player'; 
 
 
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Win Sum]
  AS [Measures].[USD Win], 
 FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';               
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';                
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Win Sum Prev Month]
  AS (ParallelPeriod(
@@ -4806,7 +4937,7 @@ CREATE MEMBER CURRENTCUBE.[Measures].[Win Sum Prev Month]
         ),
         [Measures].[Win Sum]), 
 FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';            
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';             
 
          
 CREATE MEMBER CURRENTCUBE.[Measures].[Win Sum Var%] 
@@ -4818,7 +4949,7 @@ AS
         / [Measures].[Win Sum Prev Month]
     ),
 FORMAT_STRING = "Percent",
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';               
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';                
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Win Sum Delta] 
 AS
@@ -4828,13 +4959,31 @@ AS
         ([Measures].[Win Sum] - [Measures].[Win Sum Prev Month])
     ),
 FORMAT_STRING = "$#,##0.00;($#,##0.00)",
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';           
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';            
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Win Rate by Amount]
+AS
+  IIF(
+    [Measures].[Ticket Count] = 0,
+    NULL,
+    [Measures].[Win Sum] / [Measures].[USD Stake]
+  ),
+VISIBLE = 1,
+FORMAT_STRING = "Percent",
+DISPLAY_FOLDER = 'Betting';                               
+
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Win Rate]
+ AS [Measures].[Bets Win Sum]/[Measures].[Ticket Count], 
+FORMAT_STRING = "Percent", 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Performance Ratios'; 
 
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Loss Sum]
  AS [Measures].[USD Loss], 
 FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';       
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';        
 
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Loss Sum Prev Month]
@@ -4844,7 +4993,7 @@ CREATE MEMBER CURRENTCUBE.[Measures].[Loss Sum Prev Month]
         ),
         [Measures].[Loss Sum]), 
 FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';                
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';                 
                   
 CREATE MEMBER CURRENTCUBE.[Measures].[Loss Sum Var%] 
 AS
@@ -4855,7 +5004,7 @@ AS
         / [Measures].[Loss Sum Prev Month]
     ),
 FORMAT_STRING = "Percent",
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';               
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';                
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Loss Sum Delta] 
 AS
@@ -4865,13 +5014,13 @@ AS
         ([Measures].[Loss Sum] - [Measures].[Loss Sum Prev Month])
     ),
 FORMAT_STRING = "$#,##0.00;($#,##0.00)",
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';       
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';        
 
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Winloss Sum]
  AS [Measures].[USD Winloss], 
 FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';               
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';                
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Winloss Sum Prev Month]
  AS (ParallelPeriod(
@@ -4880,7 +5029,7 @@ CREATE MEMBER CURRENTCUBE.[Measures].[Winloss Sum Prev Month]
         ),
         [Measures].[Winloss Sum]), 
 FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';                
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';                 
                   
 CREATE MEMBER CURRENTCUBE.[Measures].[Winloss Sum Var%] 
 AS
@@ -4891,7 +5040,7 @@ AS
         / [Measures].[Winloss Sum Prev Month]
     ),
 FORMAT_STRING = "Percent",
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';   
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';    
 
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Winloss Sum Delta] 
@@ -4902,13 +5051,33 @@ AS
         ([Measures].[Winloss Sum] - [Measures].[Winloss Sum Prev Month])
     ),
 FORMAT_STRING = "$#,##0.00;($#,##0.00)",
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';        
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';         
 
+CREATE MEMBER CURRENTCUBE.[Measures].[Win Sum Contri % by Game]
+ AS 
+   IIF(
+    ([Measures].[Win Sum], [Game].[Game].DefaultMember) = 0,
+    NULL,
+    [Measures].[Win Sum]/ ([Measures].[Win Sum], [Game].[Game].DefaultMember)
+   ),
+VISIBLE = 1,
+FORMAT_STRING = "Percent",
+DISPLAY_FOLDER = 'Revenue &amp; Profit'; 
 
-          
+CREATE MEMBER CURRENTCUBE.[Measures].[Loss Sum Contri % by Game]
+ AS 
+   IIF(
+    ([Measures].[Loss Sum], [Game].[Game].DefaultMember) = 0,
+    NULL,
+    [Measures].[Loss Sum]/ ([Measures].[Loss Sum], [Game].[Game].DefaultMember)
+   ),
+VISIBLE = 1,
+FORMAT_STRING = "Percent",
+DISPLAY_FOLDER = 'Revenue &amp; Profit'; 
+        
 CREATE MEMBER CURRENTCUBE.[Measures].[Turnover]
  AS [Measures].[USD Valid Stake], 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';           
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';            
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Turnover Prev Month]
  AS (ParallelPeriod(
@@ -4917,7 +5086,7 @@ CREATE MEMBER CURRENTCUBE.[Measures].[Turnover Prev Month]
         ),
         [Measures].[Turnover]), 
 FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';                
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';                 
                   
 CREATE MEMBER CURRENTCUBE.[Measures].[Turnover Var%] 
 AS
@@ -4928,7 +5097,7 @@ AS
         / [Measures].[Turnover Prev Month]
     ),
 FORMAT_STRING = "Percent",
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';   
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';    
 
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Turnover Delta] 
@@ -4939,13 +5108,59 @@ AS
         ([Measures].[Turnover] - [Measures].[Turnover Prev Month])
     ),
 FORMAT_STRING = "$#,##0.00;($#,##0.00)",
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';            
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Revenue &amp; Profit';    
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Turnover Prev Year]
+AS 
+    ([Measures].[Turnover], 
+     ParallelPeriod(
+        [Date].[Year].[Year], 
+        1, 
+        [Date].[Year].CurrentMember)
+    ),
+FORMAT_STRING = "$#,##0.00;($#,##0.00)",
+VISIBLE = 1,
+DISPLAY_FOLDER = 'Revenue &amp; Profit'; 
+       
+CREATE MEMBER CURRENTCUBE.[Measures].[Turnover YoY Var%]
+AS 
+    IIF(
+        IsEmpty([Measures].[Turnover Prev Year]) OR [Measures].[Turnover Prev Year] = 0,
+        NULL,
+        ([Measures].[Turnover] - [Measures].[Turnover Prev Year])
+        / [Measures].[Turnover Prev Year]
+    ),
+FORMAT_STRING = "Percent",
+VISIBLE = 1,
+DISPLAY_FOLDER = 'Revenue &amp; Profit'; 
+  
+CREATE MEMBER CURRENTCUBE.[Measures].[Turnover YoY Delta]
+AS 
+    IIF(
+        IsEmpty([Measures].[Turnover Prev Year]) OR [Measures].[Turnover Prev Year] = 0,
+        NULL,
+        ([Measures].[Turnover] - [Measures].[Turnover Prev Year])
+    ),
+FORMAT_STRING = "$#,##0.00;($#,##0.00)",
+VISIBLE = 1,
+DISPLAY_FOLDER = 'Revenue &amp; Profit'; 
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Turnover Contri % by Game]
+ AS 
+   IIF(
+    ([Measures].[Turnover], [Game].[Game].DefaultMember) = 0,
+    NULL,
+    [Measures].[Turnover]/ ([Measures].[Turnover], [Game].[Game].DefaultMember)
+   ),
+VISIBLE = 1,
+FORMAT_STRING = "Percent",
+DISPLAY_FOLDER = 'Revenue &amp; Profit'; 
 
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Bets Sum]
  AS [Measures].[Ticket Count], 
 FORMAT_STRING = "#,##0;-#,##0", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';               
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';                
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Bets Sum Prev Month]
  AS (ParallelPeriod(
@@ -4954,7 +5169,7 @@ CREATE MEMBER CURRENTCUBE.[Measures].[Bets Sum Prev Month]
         ),
         [Measures].[Bets Sum]), 
 FORMAT_STRING = "#,##0.00;(#,##0.00)", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';   
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';    
 
  
 CREATE MEMBER CURRENTCUBE.[Measures].[Bets Sum Var%] 
@@ -4966,7 +5181,7 @@ AS
         / [Measures].[Bets Sum Prev Month]
     ),
 FORMAT_STRING = "Percent",
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';               
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';                
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Bets Sum Delta]
  AS IIF(
@@ -4975,13 +5190,13 @@ CREATE MEMBER CURRENTCUBE.[Measures].[Bets Sum Delta]
         ([Measures].[Bets Sum] - [Measures].[Bets Sum Prev Month])
     ), 
 FORMAT_STRING = "#,##0.00;(#,##0.00)", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';            
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';             
           
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Profitability %]
  AS (1 - ([Measures].[USD Valid Payout]/ [Measures].[USD Valid Stake])), 
 FORMAT_STRING = "Percent", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Performance Ratios';                 
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Performance Ratios';                  
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Profitability % Prev Month]
  AS (ParallelPeriod(
@@ -4990,7 +5205,7 @@ CREATE MEMBER CURRENTCUBE.[Measures].[Profitability % Prev Month]
         ),
         [Measures].[Profitability %]), 
 FORMAT_STRING = "Percent", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Performance Ratios';   
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Performance Ratios';    
 
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Profitability % Var%]
@@ -5001,7 +5216,7 @@ CREATE MEMBER CURRENTCUBE.[Measures].[Profitability % Var%]
         / [Measures].[Profitability % Prev Month]
     ), 
 FORMAT_STRING = "#,##0.00%;-#,##0.00%", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Performance Ratios';               
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Performance Ratios';                
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Profitability % Delta]
  AS IIF(
@@ -5010,31 +5225,25 @@ CREATE MEMBER CURRENTCUBE.[Measures].[Profitability % Delta]
         ([Measures].[Profitability %] - [Measures].[Profitability % Prev Month])
     ), 
 FORMAT_STRING = "#,##0.00;(#,##0.00)", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Performance Ratios';       
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Performance Ratios';        
 
 
 CREATE MEMBER CURRENTCUBE.[Measures].[RTP %]
  AS [Measures].[USD Valid Payout]/[Measures].[USD Valid Stake], 
 FORMAT_STRING = "Percent", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Performance Ratios';                            
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Performance Ratios';                             
 
    
 CREATE MEMBER CURRENTCUBE.[Measures].[Refund Rate]
  AS [Measures].[USD Refund]/[Measures].[USD Stake], 
 FORMAT_STRING = "Percent", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Bet Quality';                               
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Bet Quality';                                
 
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Bet Size]
  AS [Measures].[USD Stake]/[Measures].[Ticket Count], 
 FORMAT_STRING = "$#,##0.00;($#,##0.00)", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';                              
-
-
-CREATE MEMBER CURRENTCUBE.[Measures].[Win Rate]
- AS [Measures].[USD Win]/[Measures].[Ticket Count], 
-FORMAT_STRING = "Percent", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Performance Ratios';                   
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Betting';                    
 
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Active Players Prev Month]
@@ -5043,7 +5252,7 @@ CREATE MEMBER CURRENTCUBE.[Measures].[Active Players Prev Month]
         [Measures].[Active Players]
     ),
 FORMAT_STRING = "#,##0.00;(#,##0.00)", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Player';           
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Player';            
 
  
 
@@ -5056,7 +5265,7 @@ AS
         / [Measures].[Active Players Prev Month]
     ),
 FORMAT_STRING = "Percent",
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Player';               
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Player';                
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Active Players Delta] 
 AS
@@ -5066,7 +5275,18 @@ AS
         ([Measures].[Active Players] - [Measures].[Active Players Prev Month])
     ),
 FORMAT_STRING = "$#,##0.00;($#,##0.00)",
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Player';           
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Player';    
+
+CREATE MEMBER CURRENTCUBE.[Measures].[Active Players Contri % by Game]
+ AS 
+   IIF(
+    ([Measures].[Active Players], [Game].[Game].DefaultMember) = 0,
+    NULL,
+    [Measures].[Active Players]/ ([Measures].[Active Players], [Game].[Game].DefaultMember)
+   ),
+VISIBLE = 1,
+FORMAT_STRING = "Percent",
+DISPLAY_FOLDER = 'Player';         
 
 CREATE MEMBER CURRENTCUBE.[Measures].[TO % by GameCategory] AS
     IIF(
@@ -5077,7 +5297,7 @@ CREATE MEMBER CURRENTCUBE.[Measures].[TO % by GameCategory] AS
     ),
 FORMAT_STRING = "Percent",
 VISIBLE = 1,
-DISPLAY_FOLDER = 'Revenue &amp; Profit';   
+DISPLAY_FOLDER = 'Revenue &amp; Profit';    
 
 
 -- returning player xdays
@@ -5098,7 +5318,7 @@ CREATE MEMBER CURRENTCUBE.[Measures].[Returning Players 7d] AS
 		)
 	),
 FORMAT_STRING = "#,##0.00;(#,##0.00)", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Player';
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Player'; 
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Returning Players 14d] AS
 	COUNT(
@@ -5117,7 +5337,7 @@ CREATE MEMBER CURRENTCUBE.[Measures].[Returning Players 14d] AS
 		)
 	),
 FORMAT_STRING = "#,##0.00;(#,##0.00)", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Player';
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Player'; 
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Returning Players 30d] AS
 	COUNT(
@@ -5136,7 +5356,7 @@ CREATE MEMBER CURRENTCUBE.[Measures].[Returning Players 30d] AS
 		)
 	),
 FORMAT_STRING = "#,##0.00;(#,##0.00)", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Player';
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Player'; 
 
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Retention Rate %] AS
@@ -5172,7 +5392,7 @@ CREATE MEMBER CURRENTCUBE.[Measures].[Retention Rate %] AS
         NULL
     ),
 FORMAT_STRING = "Percent", 
-VISIBLE = 1 ,  DISPLAY_FOLDER = 'Player';
+VISIBLE = 1 ,  DISPLAY_FOLDER = 'Player'; 
 
 CREATE MEMBER CURRENTCUBE.[Measures].[Churn Rate %] AS
     IIF(
@@ -5182,10 +5402,7 @@ CREATE MEMBER CURRENTCUBE.[Measures].[Churn Rate %] AS
     ),
 FORMAT_STRING = "Percent", 
 VISIBLE = 1,
-DISPLAY_FOLDER = 'Player';
-
-
-</Text>
+DISPLAY_FOLDER = 'Player'; </Text>
             </Command>
           </Commands>
           <CalculationProperties>
@@ -5253,7 +5470,7 @@ DISPLAY_FOLDER = 'Player';
                 <Name>_ALL_TABLES_</Name>
                 <DiagramLayout>
                   <dds>
-                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="40" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-15990" scrolltop="19309" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="30877" y="22410" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="40" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-15990" scrolltop="19310" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="43312" y="22463" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                       <font>
                         <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                       </font>
@@ -5275,7 +5492,7 @@ DISPLAY_FOLDER = 'Player';
                       </layoutobject>
                       <shape groupshapeid="0" groupnode="0" />
                     </ddscontrol>
-                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Bet" left="3650" top="15753" logicalid="21" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="12752" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Bet" left="2830" top="14827" logicalid="21" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="12752" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000d0310000" />
                       </control>
@@ -5450,7 +5667,7 @@ DISPLAY_FOLDER = 'Player';
                         <point x="2259" y="37433" />
                       </connector>
                     </ddscontrol>
-                    <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="-8229" top="26779" logicalid="33" controlid="14" masterid="0" hint1="0" hint2="0" width="12179" height="3115" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="-8229" top="24753" logicalid="33" controlid="14" masterid="0" hint1="0" hint2="0" width="11359" height="5141" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
                           <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -5463,13 +5680,13 @@ DISPLAY_FOLDER = 'Player';
                           <property name="VisibleAP" value="0" vartype="3" />
                         </ddsxmlobj>
                       </layoutobject>
-                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="6" destattachpoint="50" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="6" destattachpoint="46" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
                         <point x="-7830" y="29394" />
-                        <point x="-7830" y="27079" />
-                        <point x="3650" y="27079" />
+                        <point x="-7830" y="25053" />
+                        <point x="2830" y="25053" />
                       </connector>
                     </ddscontrol>
-                    <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="5400" top="28205" logicalid="34" controlid="15" masterid="0" hint1="0" hint2="0" width="4546" height="6014" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="4580" top="27279" logicalid="34" controlid="15" masterid="0" hint1="0" hint2="0" width="5366" height="6940" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
                           <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -5485,11 +5702,11 @@ DISPLAY_FOLDER = 'Player';
                       <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="2" sourceattachpoint="4" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
                         <point x="9546" y="33719" />
                         <point x="9546" y="29538" />
-                        <point x="5700" y="29538" />
-                        <point x="5700" y="28505" />
+                        <point x="4880" y="29538" />
+                        <point x="4880" y="27579" />
                       </connector>
                     </ddscontrol>
-                    <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="5950" top="28205" logicalid="35" controlid="16" masterid="0" hint1="0" hint2="0" width="14796" height="4071" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="5130" top="27279" logicalid="35" controlid="16" masterid="0" hint1="0" hint2="0" width="15616" height="4997" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
                           <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -5505,11 +5722,11 @@ DISPLAY_FOLDER = 'Player';
                       <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="2" sourceattachpoint="4" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
                         <point x="20346" y="31776" />
                         <point x="20346" y="28905" />
-                        <point x="6250" y="28905" />
-                        <point x="6250" y="28505" />
+                        <point x="5430" y="28905" />
+                        <point x="5430" y="27579" />
                       </connector>
                     </ddscontrol>
-                    <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="5950" top="28205" logicalid="36" controlid="17" masterid="0" hint1="0" hint2="0" width="9396" height="5803" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="5130" top="27279" logicalid="36" controlid="17" masterid="0" hint1="0" hint2="0" width="10216" height="6729" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
                           <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -5525,11 +5742,11 @@ DISPLAY_FOLDER = 'Player';
                       <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="2" sourceattachpoint="4" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
                         <point x="14946" y="33508" />
                         <point x="14946" y="29432" />
-                        <point x="6250" y="29432" />
-                        <point x="6250" y="28505" />
+                        <point x="5430" y="29432" />
+                        <point x="5430" y="27579" />
                       </connector>
                     </ddscontrol>
-                    <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="3553" top="28205" logicalid="37" controlid="18" masterid="0" hint1="0" hint2="0" width="1897" height="5601" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="3553" top="27279" logicalid="37" controlid="18" masterid="0" hint1="0" hint2="0" width="1077" height="6527" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
                           <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -5545,11 +5762,11 @@ DISPLAY_FOLDER = 'Player';
                       <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="2" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
                         <point x="3952" y="33306" />
                         <point x="3952" y="29331" />
-                        <point x="5150" y="29331" />
-                        <point x="5150" y="28505" />
+                        <point x="4330" y="29331" />
+                        <point x="4330" y="27579" />
                       </connector>
                     </ddscontrol>
-                    <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="-7135" top="22620" logicalid="38" controlid="19" masterid="0" hint1="0" hint2="0" width="11085" height="909" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                    <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="-7135" top="22620" logicalid="38" controlid="19" masterid="0" hint1="0" hint2="0" width="10265" height="1083" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                       <control>
                         <ddsxmlobj>
                           <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -5562,11 +5779,11 @@ DISPLAY_FOLDER = 'Player';
                           <property name="VisibleAP" value="0" vartype="3" />
                         </ddsxmlobj>
                       </layoutobject>
-                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="2" sourceattachpoint="11" destattachpoint="36" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="2" sourceattachpoint="11" destattachpoint="40" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
                         <point x="-6835" y="23019" />
                         <point x="-1593" y="23019" />
-                        <point x="-1593" y="23229" />
-                        <point x="3650" y="23229" />
+                        <point x="-1593" y="23403" />
+                        <point x="2830" y="23403" />
                       </connector>
                     </ddscontrol>
                   </dds>
@@ -5574,7 +5791,7 @@ DISPLAY_FOLDER = 'Player';
                 <ShowRelationshipNames>False</ShowRelationshipNames>
                 <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
                 <DiagramViewPortLeft>-15990</DiagramViewPortLeft>
-                <DiagramViewPortTop>19309</DiagramViewPortTop>
+                <DiagramViewPortTop>19310</DiagramViewPortTop>
                 <DiagramBoundingLeft>-10118</DiagramBoundingLeft>
                 <DiagramBoundingTop>6725</DiagramBoundingTop>
                 <DiagramZoom>100</DiagramZoom>
@@ -5782,6 +5999,8 @@ DISPLAY_FOLDER = 'Player';
                       <xs:element name="SystemId" msprop:DbColumnName="SystemId" msprop:design-time-name="e2fcd61b-f9b7-47d8-82a2-c9abcbff15a8" type="xs:int" minOccurs="0" />
                       <xs:element name="IsRealBet" msdata:ReadOnly="true" msprop:DbColumnName="IsRealBet" msprop:IsLogical="True" msprop:ComputedColumnExpression="CASE WHEN [stake] &gt; 0 THEN 1 ELSE 0 END" msprop:design-time-name="5274d21a-4ef5-4e60-bef9-61f2508f6213" msprop:Description="" msprop:FriendlyName="IsRealBet" type="xs:int" />
                       <xs:element name="DateTimeKey" msprop:DbColumnName="DateTimeKey" msprop:design-time-name="5877f6f0-20cc-405b-ba34-f3b6c1d09f24" type="xs:dateTime" minOccurs="0" />
+                      <xs:element name="IsRealRefundBet" msdata:ReadOnly="true" msprop:DbColumnName="IsRealRefundBet" msprop:IsLogical="True" msprop:ComputedColumnExpression="Case when istest = 0 and refund &gt; 0 then 1 else 0 end" msprop:design-time-name="5d939df4-dde9-4838-9f14-5b88b579ad0a" msprop:Description="" msprop:FriendlyName="IsRealRefundBet" type="xs:int" />
+                      <xs:element name="IsBetWin" msdata:ReadOnly="true" msprop:DbColumnName="IsBetWin" msprop:IsLogical="True" msprop:design-time-name="f63cefa7-6404-46a3-b6d3-bf8be0680d89" msprop:Description="" msprop:ComputedColumnExpression="case when USD_win &gt; 0 then 1 else 0 end" type="xs:int" />
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
@@ -6077,17 +6296,30 @@ DISPLAY_FOLDER = 'Player';
               <xs:selector xpath=".//dbo_DimGame" />
               <xs:field xpath="ProductId" />
             </xs:keyref>
-            <xs:keyref name="FK_DimPlayer_DateKey" refer="Constraint1">
-              <xs:selector xpath=".//dbo_DimPlayer1" />
-              <xs:field xpath="DateKey" />
-            </xs:keyref>
             <xs:keyref name="FK_DimPlayer_SystemId" refer="dbo_DimSystem_Constraint1">
               <xs:selector xpath=".//dbo_DimPlayer1" />
               <xs:field xpath="systemId" />
             </xs:keyref>
-            <xs:keyref name="FK_FactBet_DateTimeKey" refer="dbo_DimDateTime_Constraint1">
+            <xs:keyref name="FK_DimPlayer_DateKey" refer="Constraint1">
+              <xs:selector xpath=".//dbo_DimPlayer1" />
+              <xs:field xpath="DateKey" />
+            </xs:keyref>
+            <xs:keyref name="FK_FactBet_SystemId" refer="dbo_DimSystem_Constraint1">
               <xs:selector xpath=".//dbo_FactBet" />
-              <xs:field xpath="DateTimeKey" />
+              <xs:field xpath="SystemId" />
+            </xs:keyref>
+            <xs:keyref name="FK_FactBet_ProductId" refer="dbo_DimProduct_Constraint1">
+              <xs:selector xpath=".//dbo_FactBet" />
+              <xs:field xpath="ProductId" />
+            </xs:keyref>
+            <xs:keyref name="FK_FactBet_DimGame" refer="dbo_DimGame_Constraint1">
+              <xs:selector xpath=".//dbo_FactBet" />
+              <xs:field xpath="gameId" />
+              <xs:field xpath="ProductId" />
+            </xs:keyref>
+            <xs:keyref name="FK_FactBet_DateKey" refer="Constraint1">
+              <xs:selector xpath=".//dbo_FactBet" />
+              <xs:field xpath="Datekey" />
             </xs:keyref>
             <xs:keyref name="FK_FactBet_DimPlayer" refer="dbo_DimPlayer1_Constraint1">
               <xs:selector xpath=".//dbo_FactBet" />
@@ -6095,22 +6327,9 @@ DISPLAY_FOLDER = 'Player';
               <xs:field xpath="OperatorId" />
               <xs:field xpath="SystemId" />
             </xs:keyref>
-            <xs:keyref name="FK_FactBet_DateKey" refer="Constraint1">
+            <xs:keyref name="FK_FactBet_DateTimeKey" refer="dbo_DimDateTime_Constraint1">
               <xs:selector xpath=".//dbo_FactBet" />
-              <xs:field xpath="Datekey" />
-            </xs:keyref>
-            <xs:keyref name="FK_FactBet_DimGame" refer="dbo_DimGame_Constraint1">
-              <xs:selector xpath=".//dbo_FactBet" />
-              <xs:field xpath="gameId" />
-              <xs:field xpath="ProductId" />
-            </xs:keyref>
-            <xs:keyref name="FK_FactBet_ProductId" refer="dbo_DimProduct_Constraint1">
-              <xs:selector xpath=".//dbo_FactBet" />
-              <xs:field xpath="ProductId" />
-            </xs:keyref>
-            <xs:keyref name="FK_FactBet_SystemId" refer="dbo_DimSystem_Constraint1">
-              <xs:selector xpath=".//dbo_FactBet" />
-              <xs:field xpath="SystemId" />
+              <xs:field xpath="DateTimeKey" />
             </xs:keyref>
           </xs:element>
         </xs:schema>
