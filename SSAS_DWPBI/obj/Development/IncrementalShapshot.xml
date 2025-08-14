@@ -8,7 +8,7 @@
     <TransactionalDeployment>false</TransactionalDeployment>
     <PartitionDeployment>DeployPartitions</PartitionDeployment>
     <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
-    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <ProcessingOption>Default</ProcessingOption>
     <OutputScript></OutputScript>
     <ImpactAnalysisFile></ImpactAnalysisFile>
     <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
@@ -26,7 +26,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>kS2RFOjFCVZOswb2syIB8s4z56g=7/4/2025 2:39:02 PM6/18/2025 2:53:14 PM</TimeStamp>
+        <TimeStamp>o/uX6Ek1WAL2AV4vL4V0wQHK76Y=7/10/2025 2:15:10 PM6/18/2025 2:53:14 PM</TimeStamp>
         <ID>
           <String>DWPBI</String>
         </ID>
@@ -75,14 +75,14 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>/A2sHpdj2R4AFmV50h7w67Qw420=7/1/2025 5:44:11 PM6/18/2025 2:53:14 PM</TimeStamp>
+        <TimeStamp>P/VpTvSNuTLAMZ0cPrf7wNG7/4c=7/16/2025 10:15:02 AM7/10/2025 3:49:01 PM</TimeStamp>
         <ID>
-          <String>Time</String>
+          <String>DateTime</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>MtI3Zt9QpOrDpe9lGL1ZBcDEP84=7/8/2025 2:43:50 PM6/18/2025 2:53:14 PMGuKJT9Zg3BlvyiOs63s/CYFhjBM=7/4/2025 2:39:02 PM6/18/2025 2:53:14 PM</TimeStamp>
+        <TimeStamp>fHPCku2o4WSwWtTPRxeADma422I=7/16/2025 9:49:41 AM6/18/2025 2:53:14 PMGuKJT9Zg3BlvyiOs63s/CYFhjBM=7/4/2025 2:39:02 PM6/18/2025 2:53:14 PM</TimeStamp>
         <ID>
           <String>DWPBI</String>
         </ID>
@@ -99,5 +99,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2025-07-08T07:44:02.32Z</LastDeployed>
+  <LastDeployed>2025-07-16T03:19:37.45Z</LastDeployed>
 </DeploymentSnapshot>

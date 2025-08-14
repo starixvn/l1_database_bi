@@ -44,8 +44,8 @@
       <FullPath>MetricSelector.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Time.dim</Name>
-      <FullPath>Time.dim</FullPath>
+      <Name>DateTime.dim</Name>
+      <FullPath>DateTime.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>

@@ -30,7 +30,7 @@
         <ID>MetricSelector</ID>
       </Dimension>
       <Dimension>
-        <ID>Time</ID>
+        <ID>DateTime</ID>
       </Dimension>
     </Dimensions>
     <Cubes>
